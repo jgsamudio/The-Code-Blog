@@ -9,6 +9,8 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    /// This is a comment.
     var body: some View {
         Text("Hello, World!")
     }

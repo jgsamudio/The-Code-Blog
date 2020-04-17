@@ -1,0 +1,7 @@
+language: objective-c
+osx_image: xcode11.3
+xcode_workspace: TheCodeBlog.xcworkspace
+xcode_scheme: TheCodeBlog
+xcode_destination: platform=iOS Simulator,OS=13.2,name=iPhone 11
+before_install:
+- pod install

@@ -4,13 +4,9 @@ let danger = Danger()
 let editedFiles = danger.git.modifiedFiles + danger.git.createdFiles
 message("These files have changed: \(editedFiles.joined(separator: ", "))")
 
-// import Danger
-// let danger = Danger()
-
-// var bigPRThreshold = 600;
-// if (danger.github.pullRequest.additions + danger.github.pullRequest.deletions > bigPRThreshold) {
-//   warn('> Pull Request size seems relatively large. If this Pull Request contains multiple changes, please split each into separate PR will helps faster, easier review.');
-// }
+if danger.git.createdFiles.count + danger.git.modifiedFiles.count - danger.git.deletedFiles.count > 300 {
+    warn("Big PR, try to keep changes smaller if you can")
+}
 
 
 // // MARK: - 10 - Dispatch Async
@@ -77,4 +73,8 @@ message("These files have changed: \(editedFiles.joined(separator: ", "))")
 //       }
 //     }
 //   }
+// }
+
+// if danger.git.createdFiles.count + danger.git.modifiedFiles.count - danger.git.deletedFiles.count > 300 {
+//     warn("Big PR, try to keep changes smaller if you can")
 // }

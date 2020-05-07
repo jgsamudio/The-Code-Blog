@@ -5,8 +5,11 @@ let editedFiles = danger.git.modifiedFiles + danger.git.createdFiles
 message("These files have changed: \(editedFiles.joined(separator: ", "))")
 
 var bigPRThreshold = 100;
-if (danger.github.pullRequest.additions + danger.github.pullRequest.deletions > bigPRThreshold) {
-  warn('> Pull Request size seems relatively large. If this Pull Request contains multiple changes, please split each into separate PR will helps faster, easier review.');
+let additions = danger.github.pullRequest.additions ?? 0
+let deletions = danger.github.pullRequest.deletions ?? 0
+
+if ((additions + deletions) > bigPRThreshold) {
+  warn("> Pull Request size seems relatively large. If this Pull Request contains multiple changes, please split each into separate PR will helps faster, easier review.");
 }
 
 
@@ -14,7 +17,7 @@ if (danger.github.pullRequest.additions + danger.github.pullRequest.deletions > 
 //     warn("Big PR, try to keep changes smaller if you can")
 // }
 
-
+    
 // // MARK: - 10 - Dispatch Async
 
 // func checkDispatchSyncIsNotCalledOnMain() {

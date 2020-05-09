@@ -1,26 +1,26 @@
 import Danger 
 let danger = Danger()
 
-let editedFiles = danger.git.modifiedFiles + danger.git.createdFiles
-message("These files have changed: \(editedFiles.joined(separator: ", "))")
-
-// MARK: - 1 - Pull Request Description
-
-let pullRequestBody = danger.github.pullRequest.body ?? ""
-if !pullRequestBody.contains("📲 What") ||
-    !pullRequestBody.contains("👀 See") ||
-    !pullRequestBody.contains("🤔 Why") ||
-    !pullRequestBody.contains("🛠 How") {
-    warn("""
-    Pull request description is missing required information:
-     - 📲 What
-     - 🤔 Why
-     - 🛠 How
-     - 👀 See
-    Please use the pull request:template:
-    https://github.com/kickstarter/ios-oss/blob/master/.github/PULL_REQUEST_TEMPLATE.md
-    """)
-}
+//let editedFiles = danger.git.modifiedFiles + danger.git.createdFiles
+//message("These files have changed: \(editedFiles.joined(separator: ", "))")
+//
+//// MARK: - 1 - Pull Request Description
+//
+//let pullRequestBody = danger.github.pullRequest.body ?? ""
+//if !pullRequestBody.contains("📲 What") ||
+//    !pullRequestBody.contains("👀 See") ||
+//    !pullRequestBody.contains("🤔 Why") ||
+//    !pullRequestBody.contains("🛠 How") {
+//    warn("""
+//    Pull request description is missing required information:
+//     - 📲 What
+//     - 🤔 Why
+//     - 🛠 How
+//     - 👀 See
+//    Please use the pull request:template:
+//    https://github.com/kickstarter/ios-oss/blob/master/.github/PULL_REQUEST_TEMPLATE.md
+//    """)
+//}
 
 // MARK: - 2 - Large Pull Request
 
@@ -40,13 +40,12 @@ SwiftLint.lint(inline: true, strict: true, lintAllFiles: true)
 
 // MARK: - 4 - Celebrate Milestones
 
-let pullRequestMilestones = [2, 10, 100]
+let pullRequestMilestones = [3, 10, 100]
 let currentPRNumber = danger.github.pullRequest.number
 if pullRequestMilestones.contains(currentPRNumber) {
     let githubHandle = danger.github.pullRequest.user.login
-    message("Congratulations \(githubHandle)! You've made the 100th Pull Request!")
+    message("Congratulations \(githubHandle)! You've made the \(currentPRNumber)th Pull Request!")
 }
-
     
  // MARK: - 10 - Dispatch Async
 

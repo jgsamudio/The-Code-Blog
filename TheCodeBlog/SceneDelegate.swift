@@ -13,7 +13,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
 
-
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
@@ -59,7 +58,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // to restore the scene back to its current state.
     }
 
-
 }
 
 // // MARK: - 10 - Dispatch Async
@@ -83,51 +81,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 //   }
 // }
 
-
-// // MARK: - 10 - Dispatch Async
-
-// func checkDispatchSyncIsNotCalledOnMain() {
-//   let excludedFiles = [
-//     "Dangerfile"
-//   ]
-//   for file in filter(files: filesChanged, with: [.swift]) {
-//     guard excludedFiles.allSatisfy({ !file.contains($0) }) else { continue }
-//     let fileLines = read(file: file, danger: danger)
-
-//     for (index, line) in fileLines.enumerated() {
-//       if line.contains("DispatchQueue.main.sync") {
-//         let link = "https://stackoverflow.com/questions/44324595/difference-between-dispatchqueue-main-async-and-dispatchqueue-main-sync"
-//         warn(message: "Please async on the main queue. [More information](\(link))",
-//              file: file,
-//              line: index + 1)
-//       }
-//     }
-//   }
-// }
-
-
-// // MARK: - 10 - Dispatch Async
-
-// func checkDispatchSyncIsNotCalledOnMain() {
-//   let excludedFiles = [
-//     "Dangerfile"
-//   ]
-//   for file in filter(files: filesChanged, with: [.swift]) {
-//     guard excludedFiles.allSatisfy({ !file.contains($0) }) else { continue }
-//     let fileLines = read(file: file, danger: danger)
-
-//     for (index, line) in fileLines.enumerated() {
-//       if line.contains("DispatchQueue.main.sync") {
-//         let link = "https://stackoverflow.com/questions/44324595/difference-between-dispatchqueue-main-async-and-dispatchqueue-main-sync"
-//         warn(message: "Please async on the main queue. [More information](\(link))",
-//              file: file,
-//              line: index + 1)
-//       }
-//     }
-//   }
-// }
-
-
 // // MARK: - 10 - Dispatch Async
 
 // func checkDispatchSyncIsNotCalledOnMain() {
@@ -170,7 +123,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 //   }
 // }
 
-
 // // MARK: - 10 - Dispatch Async
 
 // func checkDispatchSyncIsNotCalledOnMain() {
@@ -191,7 +143,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 //     }
 //   }
 // }
-
 
 // // MARK: - 10 - Dispatch Async
 
@@ -256,93 +207,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 //   }
 // }
 
-
-// // MARK: - 10 - Dispatch Async
-
-// func checkDispatchSyncIsNotCalledOnMain() {
-//   let excludedFiles = [
-//     "Dangerfile"
-//   ]
-//   for file in filter(files: filesChanged, with: [.swift]) {
-//     guard excludedFiles.allSatisfy({ !file.contains($0) }) else { continue }
-//     let fileLines = read(file: file, danger: danger)
-
-//     for (index, line) in fileLines.enumerated() {
-//       if line.contains("DispatchQueue.main.sync") {
-//         let link = "https://stackoverflow.com/questions/44324595/difference-between-dispatchqueue-main-async-and-dispatchqueue-main-sync"
-//         warn(message: "Please async on the main queue. [More information](\(link))",
-//              file: file,
-//              line: index + 1)
-//       }
-//     }
-//   }
-// }
-
-// // MARK: - 10 - Dispatch Async
-
-// func checkDispatchSyncIsNotCalledOnMain() {
-//   let excludedFiles = [
-//     "Dangerfile"
-//   ]
-//   for file in filter(files: filesChanged, with: [.swift]) {
-//     guard excludedFiles.allSatisfy({ !file.contains($0) }) else { continue }
-//     let fileLines = read(file: file, danger: danger)
-
-//     for (index, line) in fileLines.enumerated() {
-//       if line.contains("DispatchQueue.main.sync") {
-//         let link = "https://stackoverflow.com/questions/44324595/difference-between-dispatchqueue-main-async-and-dispatchqueue-main-sync"
-//         warn(message: "Please async on the main queue. [More information](\(link))",
-//              file: file,
-//              line: index + 1)
-//       }
-//     }
-//   }
-// }v
-
-// // MARK: - 10 - Dispatch Async
-
-// func checkDispatchSyncIsNotCalledOnMain() {
-//   let excludedFiles = [
-//     "Dangerfile"
-//   ]
-//   for file in filter(files: filesChanged, with: [.swift]) {
-//     guard excludedFiles.allSatisfy({ !file.contains($0) }) else { continue }
-//     let fileLines = read(file: file, danger: danger)
-
-//     for (index, line) in fileLines.enumerated() {
-//       if line.contains("DispatchQueue.main.sync") {
-//         let link = "https://stackoverflow.com/questions/44324595/difference-between-dispatchqueue-main-async-and-dispatchqueue-main-sync"
-//         warn(message: "Please async on the main queue. [More information](\(link))",
-//              file: file,
-//              line: index + 1)
-//       }
-//     }
-//   }
-// }
-
-
-// // MARK: - 10 - Dispatch Async
-
-// func checkDispatchSyncIsNotCalledOnMain() {
-//   let excludedFiles = [
-//     "Dangerfile"
-//   ]
-//   for file in filter(files: filesChanged, with: [.swift]) {
-//     guard excludedFiles.allSatisfy({ !file.contains($0) }) else { continue }
-//     let fileLines = read(file: file, danger: danger)
-
-//     for (index, line) in fileLines.enumerated() {
-//       if line.contains("DispatchQueue.main.sync") {
-//         let link = "https://stackoverflow.com/questions/44324595/difference-between-dispatchqueue-main-async-and-dispatchqueue-main-sync"
-//         warn(message: "Please async on the main queue. [More information](\(link))",
-//              file: file,
-//              line: index + 1)
-//       }
-//     }
-//   }
-// }
-
-
 // // MARK: - 10 - Dispatch Async
 
 // func checkDispatchSyncIsNotCalledOnMain() {
@@ -384,596 +248,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 //     }
 //   }
 // }
-
-
-// // MARK: - 10 - Dispatch Async
-
-// func checkDispatchSyncIsNotCalledOnMain() {
-//   let excludedFiles = [
-//     "Dangerfile"
-//   ]
-//   for file in filter(files: filesChanged, with: [.swift]) {
-//     guard excludedFiles.allSatisfy({ !file.contains($0) }) else { continue }
-//     let fileLines = read(file: file, danger: danger)
-
-//     for (index, line) in fileLines.enumerated() {
-//       if line.contains("DispatchQueue.main.sync") {
-//         let link = "https://stackoverflow.com/questions/44324595/difference-between-dispatchqueue-main-async-and-dispatchqueue-main-sync"
-//         warn(message: "Please async on the main queue. [More information](\(link))",
-//              file: file,
-//              line: index + 1)
-//       }
-//     }
-//   }
-// }
-
-
-// // MARK: - 10 - Dispatch Async
-
-// func checkDispatchSyncIsNotCalledOnMain() {
-//   let excludedFiles = [
-//     "Dangerfile"
-//   ]
-//   for file in filter(files: filesChanged, with: [.swift]) {
-//     guard excludedFiles.allSatisfy({ !file.contains($0) }) else { continue }
-//     let fileLines = read(file: file, danger: danger)
-
-//     for (index, line) in fileLines.enumerated() {
-//       if line.contains("DispatchQueue.main.sync") {
-//         let link = "https://stackoverflow.com/questions/44324595/difference-between-dispatchqueue-main-async-and-dispatchqueue-main-sync"
-//         warn(message: "Please async on the main queue. [More information](\(link))",
-//              file: file,
-//              line: index + 1)
-//       }
-//     }
-//   }
-// }
-
-// // MARK: - 10 - Dispatch Async
-
-// func checkDispatchSyncIsNotCalledOnMain() {
-//   let excludedFiles = [
-//     "Dangerfile"
-//   ]
-//   for file in filter(files: filesChanged, with: [.swift]) {
-//     guard excludedFiles.allSatisfy({ !file.contains($0) }) else { continue }
-//     let fileLines = read(file: file, danger: danger)
-
-//     for (index, line) in fileLines.enumerated() {
-//       if line.contains("DispatchQueue.main.sync") {
-//         let link = "https://stackoverflow.com/questions/44324595/difference-between-dispatchqueue-main-async-and-dispatchqueue-main-sync"
-//         warn(message: "Please async on the main queue. [More information](\(link))",
-//              file: file,
-//              line: index + 1)
-//       }
-//     }
-//   }
-// }
-
-
-// // MARK: - 10 - Dispatch Async
-
-// func checkDispatchSyncIsNotCalledOnMain() {
-//   let excludedFiles = [
-//     "Dangerfile"
-//   ]
-//   for file in filter(files: filesChanged, with: [.swift]) {
-//     guard excludedFiles.allSatisfy({ !file.contains($0) }) else { continue }
-//     let fileLines = read(file: file, danger: danger)
-
-//     for (index, line) in fileLines.enumerated() {
-//       if line.contains("DispatchQueue.main.sync") {
-//         let link = "https://stackoverflow.com/questions/44324595/difference-between-dispatchqueue-main-async-and-dispatchqueue-main-sync"
-//         warn(message: "Please async on the main queue. [More information](\(link))",
-//              file: file,
-//              line: index + 1)
-//       }
-//     }
-//   }
-// }
-
-
-// // MARK: - 10 - Dispatch Async
-
-// func checkDispatchSyncIsNotCalledOnMain() {
-//   let excludedFiles = [
-//     "Dangerfile"
-//   ]
-//   for file in filter(files: filesChanged, with: [.swift]) {
-//     guard excludedFiles.allSatisfy({ !file.contains($0) }) else { continue }
-//     let fileLines = read(file: file, danger: danger)
-
-//     for (index, line) in fileLines.enumerated() {
-//       if line.contains("DispatchQueue.main.sync") {
-//         let link = "https://stackoverflow.com/questions/44324595/difference-between-dispatchqueue-main-async-and-dispatchqueue-main-sync"
-//         warn(message: "Please async on the main queue. [More information](\(link))",
-//              file: file,
-//              line: index + 1)
-//       }
-//     }
-//   }
-// }
-v
-
-// // MARK: - 10 - Dispatch Async
-
-// func checkDispatchSyncIsNotCalledOnMain() {
-//   let excludedFiles = [
-//     "Dangerfile"
-//   ]
-//   for file in filter(files: filesChanged, with: [.swift]) {
-//     guard excludedFiles.allSatisfy({ !file.contains($0) }) else { continue }
-//     let fileLines = read(file: file, danger: danger)
-
-//     for (index, line) in fileLines.enumerated() {
-//       if line.contains("DispatchQueue.main.sync") {
-//         let link = "https://stackoverflow.com/questions/44324595/difference-between-dispatchqueue-main-async-and-dispatchqueue-main-sync"
-//         warn(message: "Please async on the main queue. [More information](\(link))",
-//              file: file,
-//              line: index + 1)
-//       }
-//     }
-//   }
-// }
-
-
-// // MARK: - 10 - Dispatch Async
-
-// func checkDispatchSyncIsNotCalledOnMain() {
-//   let excludedFiles = [
-//     "Dangerfile"
-//   ]
-//   for file in filter(files: filesChanged, with: [.swift]) {
-//     guard excludedFiles.allSatisfy({ !file.contains($0) }) else { continue }
-//     let fileLines = read(file: file, danger: danger)
-
-//     for (index, line) in fileLines.enumerated() {
-//       if line.contains("DispatchQueue.main.sync") {
-//         let link = "https://stackoverflow.com/questions/44324595/difference-between-dispatchqueue-main-async-and-dispatchqueue-main-sync"
-//         warn(message: "Please async on the main queue. [More information](\(link))",
-//              file: file,
-//              line: index + 1)
-//       }
-//     }
-//   }
-// }
-
-// // MARK: - 10 - Dispatch Async
-
-// func checkDispatchSyncIsNotCalledOnMain() {
-//   let excludedFiles = [
-//     "Dangerfile"
-//   ]
-//   for file in filter(files: filesChanged, with: [.swift]) {
-//     guard excludedFiles.allSatisfy({ !file.contains($0) }) else { continue }
-//     let fileLines = read(file: file, danger: danger)
-
-//     for (index, line) in fileLines.enumerated() {
-//       if line.contains("DispatchQueue.main.sync") {
-//         let link = "https://stackoverflow.com/questions/44324595/difference-between-dispatchqueue-main-async-and-dispatchqueue-main-sync"
-//         warn(message: "Please async on the main queue. [More information](\(link))",
-//              file: file,
-//              line: index + 1)
-//       }
-//     }
-//   }
-// }
-
-
-// // MARK: - 10 - Dispatch Async
-
-// func checkDispatchSyncIsNotCalledOnMain() {
-//   let excludedFiles = [
-//     "Dangerfile"
-//   ]
-//   for file in filter(files: filesChanged, with: [.swift]) {
-//     guard excludedFiles.allSatisfy({ !file.contains($0) }) else { continue }
-//     let fileLines = read(file: file, danger: danger)
-
-//     for (index, line) in fileLines.enumerated() {
-//       if line.contains("DispatchQueue.main.sync") {
-//         let link = "https://stackoverflow.com/questions/44324595/difference-between-dispatchqueue-main-async-and-dispatchqueue-main-sync"
-//         warn(message: "Please async on the main queue. [More information](\(link))",
-//              file: file,
-//              line: index + 1)
-//       }
-//     }
-//   }
-// }
-
-
-// // MARK: - 10 - Dispatch Async
-
-// func checkDispatchSyncIsNotCalledOnMain() {
-//   let excludedFiles = [
-//     "Dangerfile"
-//   ]
-//   for file in filter(files: filesChanged, with: [.swift]) {
-//     guard excludedFiles.allSatisfy({ !file.contains($0) }) else { continue }
-//     let fileLines = read(file: file, danger: danger)
-
-//     for (index, line) in fileLines.enumerated() {
-//       if line.contains("DispatchQueue.main.sync") {
-//         let link = "https://stackoverflow.com/questions/44324595/difference-between-dispatchqueue-main-async-and-dispatchqueue-main-sync"
-//         warn(message: "Please async on the main queue. [More information](\(link))",
-//              file: file,
-//              line: index + 1)
-//       }
-//     }
-//   }
-// }
-
-
-// // MARK: - 10 - Dispatch Async
-
-// func checkDispatchSyncIsNotCalledOnMain() {
-//   let excludedFiles = [
-//     "Dangerfile"
-//   ]
-//   for file in filter(files: filesChanged, with: [.swift]) {
-//     guard excludedFiles.allSatisfy({ !file.contains($0) }) else { continue }
-//     let fileLines = read(file: file, danger: danger)
-
-//     for (index, line) in fileLines.enumerated() {
-//       if line.contains("DispatchQueue.main.sync") {
-//         let link = "https://stackoverflow.com/questions/44324595/difference-between-dispatchqueue-main-async-and-dispatchqueue-main-sync"
-//         warn(message: "Please async on the main queue. [More information](\(link))",
-//              file: file,
-//              line: index + 1)
-//       }
-//     }
-//   }
-// }
-
-
-// // MARK: - 10 - Dispatch Async
-
-// func checkDispatchSyncIsNotCalledOnMain() {
-//   let excludedFiles = [
-//     "Dangerfile"
-//   ]
-//   for file in filter(files: filesChanged, with: [.swift]) {
-//     guard excludedFiles.allSatisfy({ !file.contains($0) }) else { continue }
-//     let fileLines = read(file: file, danger: danger)
-
-//     for (index, line) in fileLines.enumerated() {
-//       if line.contains("DispatchQueue.main.sync") {
-//         let link = "https://stackoverflow.com/questions/44324595/difference-between-dispatchqueue-main-async-and-dispatchqueue-main-sync"
-//         warn(message: "Please async on the main queue. [More information](\(link))",
-//              file: file,
-//              line: index + 1)
-//       }
-//     }
-//   }
-// }
-
-
-// // MARK: - 10 - Dispatch Async
-
-// func checkDispatchSyncIsNotCalledOnMain() {
-//   let excludedFiles = [
-//     "Dangerfile"
-//   ]
-//   for file in filter(files: filesChanged, with: [.swift]) {
-//     guard excludedFiles.allSatisfy({ !file.contains($0) }) else { continue }
-//     let fileLines = read(file: file, danger: danger)
-
-//     for (index, line) in fileLines.enumerated() {
-//       if line.contains("DispatchQueue.main.sync") {
-//         let link = "https://stackoverflow.com/questions/44324595/difference-between-dispatchqueue-main-async-and-dispatchqueue-main-sync"
-//         warn(message: "Please async on the main queue. [More information](\(link))",
-//              file: file,
-//              line: index + 1)
-//       }
-//     }
-//   }
-// }
-
-
-// // MARK: - 10 - Dispatch Async
-
-// func checkDispatchSyncIsNotCalledOnMain() {
-//   let excludedFiles = [
-//     "Dangerfile"
-//   ]
-//   for file in filter(files: filesChanged, with: [.swift]) {
-//     guard excludedFiles.allSatisfy({ !file.contains($0) }) else { continue }
-//     let fileLines = read(file: file, danger: danger)
-
-//     for (index, line) in fileLines.enumerated() {
-//       if line.contains("DispatchQueue.main.sync") {
-//         let link = "https://stackoverflow.com/questions/44324595/difference-between-dispatchqueue-main-async-and-dispatchqueue-main-sync"
-//         warn(message: "Please async on the main queue. [More information](\(link))",
-//              file: file,
-//              line: index + 1)
-//       }
-//     }
-//   }
-// }
-
-
-// // MARK: - 10 - Dispatch Async
-
-// func checkDispatchSyncIsNotCalledOnMain() {
-//   let excludedFiles = [
-//     "Dangerfile"
-//   ]
-//   for file in filter(files: filesChanged, with: [.swift]) {
-//     guard excludedFiles.allSatisfy({ !file.contains($0) }) else { continue }
-//     let fileLines = read(file: file, danger: danger)
-
-//     for (index, line) in fileLines.enumerated() {
-//       if line.contains("DispatchQueue.main.sync") {
-//         let link = "https://stackoverflow.com/questions/44324595/difference-between-dispatchqueue-main-async-and-dispatchqueue-main-sync"
-//         warn(message: "Please async on the main queue. [More information](\(link))",
-//              file: file,
-//              line: index + 1)
-//       }
-//     }
-//   }
-// }
-
-
-// // MARK: - 10 - Dispatch Async
-
-// func checkDispatchSyncIsNotCalledOnMain() {
-//   let excludedFiles = [
-//     "Dangerfile"
-//   ]
-//   for file in filter(files: filesChanged, with: [.swift]) {
-//     guard excludedFiles.allSatisfy({ !file.contains($0) }) else { continue }
-//     let fileLines = read(file: file, danger: danger)
-
-//     for (index, line) in fileLines.enumerated() {
-//       if line.contains("DispatchQueue.main.sync") {
-//         let link = "https://stackoverflow.com/questions/44324595/difference-between-dispatchqueue-main-async-and-dispatchqueue-main-sync"
-//         warn(message: "Please async on the main queue. [More information](\(link))",
-//              file: file,
-//              line: index + 1)
-//       }
-//     }
-//   }
-// }
-
-
-// // MARK: - 10 - Dispatch Async
-
-// func checkDispatchSyncIsNotCalledOnMain() {
-//   let excludedFiles = [
-//     "Dangerfile"
-//   ]
-//   for file in filter(files: filesChanged, with: [.swift]) {
-//     guard excludedFiles.allSatisfy({ !file.contains($0) }) else { continue }
-//     let fileLines = read(file: file, danger: danger)
-
-//     for (index, line) in fileLines.enumerated() {
-//       if line.contains("DispatchQueue.main.sync") {
-//         let link = "https://stackoverflow.com/questions/44324595/difference-between-dispatchqueue-main-async-and-dispatchqueue-main-sync"
-//         warn(message: "Please async on the main queue. [More information](\(link))",
-//              file: file,
-//              line: index + 1)
-//       }
-//     }
-//   }
-// }
-
-
-// // MARK: - 10 - Dispatch Async
-
-// func checkDispatchSyncIsNotCalledOnMain() {
-//   let excludedFiles = [
-//     "Dangerfile"
-//   ]
-//   for file in filter(files: filesChanged, with: [.swift]) {
-//     guard excludedFiles.allSatisfy({ !file.contains($0) }) else { continue }
-//     let fileLines = read(file: file, danger: danger)
-
-//     for (index, line) in fileLines.enumerated() {
-//       if line.contains("DispatchQueue.main.sync") {
-//         let link = "https://stackoverflow.com/questions/44324595/difference-between-dispatchqueue-main-async-and-dispatchqueue-main-sync"
-//         warn(message: "Please async on the main queue. [More information](\(link))",
-//              file: file,
-//              line: index + 1)
-//       }
-//     }
-//   }
-// }
-
-
-// // MARK: - 10 - Dispatch Async
-
-// func checkDispatchSyncIsNotCalledOnMain() {
-//   let excludedFiles = [
-//     "Dangerfile"
-//   ]
-//   for file in filter(files: filesChanged, with: [.swift]) {
-//     guard excludedFiles.allSatisfy({ !file.contains($0) }) else { continue }
-//     let fileLines = read(file: file, danger: danger)
-
-//     for (index, line) in fileLines.enumerated() {
-//       if line.contains("DispatchQueue.main.sync") {
-//         let link = "https://stackoverflow.com/questions/44324595/difference-between-dispatchqueue-main-async-and-dispatchqueue-main-sync"
-//         warn(message: "Please async on the main queue. [More information](\(link))",
-//              file: file,
-//              line: index + 1)
-//       }
-//     }
-//   }
-// }
-
-
-// // MARK: - 10 - Dispatch Async
-
-// func checkDispatchSyncIsNotCalledOnMain() {
-//   let excludedFiles = [
-//     "Dangerfile"
-//   ]
-//   for file in filter(files: filesChanged, with: [.swift]) {
-//     guard excludedFiles.allSatisfy({ !file.contains($0) }) else { continue }
-//     let fileLines = read(file: file, danger: danger)
-
-//     for (index, line) in fileLines.enumerated() {
-//       if line.contains("DispatchQueue.main.sync") {
-//         let link = "https://stackoverflow.com/questions/44324595/difference-between-dispatchqueue-main-async-and-dispatchqueue-main-sync"
-//         warn(message: "Please async on the main queue. [More information](\(link))",
-//              file: file,
-//              line: index + 1)
-//       }
-//     }
-//   }
-// }
-
-
-// // MARK: - 10 - Dispatch Async
-
-// func checkDispatchSyncIsNotCalledOnMain() {
-//   let excludedFiles = [
-//     "Dangerfile"
-//   ]
-//   for file in filter(files: filesChanged, with: [.swift]) {
-//     guard excludedFiles.allSatisfy({ !file.contains($0) }) else { continue }
-//     let fileLines = read(file: file, danger: danger)
-
-//     for (index, line) in fileLines.enumerated() {
-//       if line.contains("DispatchQueue.main.sync") {
-//         let link = "https://stackoverflow.com/questions/44324595/difference-between-dispatchqueue-main-async-and-dispatchqueue-main-sync"
-//         warn(message: "Please async on the main queue. [More information](\(link))",
-//              file: file,
-//              line: index + 1)
-//       }
-//     }
-//   }
-// }
-
-
-// // MARK: - 10 - Dispatch Async
-
-// func checkDispatchSyncIsNotCalledOnMain() {
-//   let excludedFiles = [
-//     "Dangerfile"
-//   ]
-//   for file in filter(files: filesChanged, with: [.swift]) {
-//     guard excludedFiles.allSatisfy({ !file.contains($0) }) else { continue }
-//     let fileLines = read(file: file, danger: danger)
-
-//     for (index, line) in fileLines.enumerated() {
-//       if line.contains("DispatchQueue.main.sync") {
-//         let link = "https://stackoverflow.com/questions/44324595/difference-between-dispatchqueue-main-async-and-dispatchqueue-main-sync"
-//         warn(message: "Please async on the main queue. [More information](\(link))",
-//              file: file,
-//              line: index + 1)
-//       }
-//     }
-//   }
-// }
-
-// // MARK: - 10 - Dispatch Async
-
-// func checkDispatchSyncIsNotCalledOnMain() {
-//   let excludedFiles = [
-//     "Dangerfile"
-//   ]
-//   for file in filter(files: filesChanged, with: [.swift]) {
-//     guard excludedFiles.allSatisfy({ !file.contains($0) }) else { continue }
-//     let fileLines = read(file: file, danger: danger)
-
-//     for (index, line) in fileLines.enumerated() {
-//       if line.contains("DispatchQueue.main.sync") {
-//         let link = "https://stackoverflow.com/questions/44324595/difference-between-dispatchqueue-main-async-and-dispatchqueue-main-sync"
-//         warn(message: "Please async on the main queue. [More information](\(link))",
-//              file: file,
-//              line: index + 1)
-//       }
-//     }
-//   }
-// }
-
-
-// // MARK: - 10 - Dispatch Async
-
-// func checkDispatchSyncIsNotCalledOnMain() {
-//   let excludedFiles = [
-//     "Dangerfile"
-//   ]
-//   for file in filter(files: filesChanged, with: [.swift]) {
-//     guard excludedFiles.allSatisfy({ !file.contains($0) }) else { continue }
-//     let fileLines = read(file: file, danger: danger)
-
-//     for (index, line) in fileLines.enumerated() {
-//       if line.contains("DispatchQueue.main.sync") {
-//         let link = "https://stackoverflow.com/questions/44324595/difference-between-dispatchqueue-main-async-and-dispatchqueue-main-sync"
-//         warn(message: "Please async on the main queue. [More information](\(link))",
-//              file: file,
-//              line: index + 1)
-//       }
-//     }
-//   }
-// }
-
-
-// // MARK: - 10 - Dispatch Async
-
-// func checkDispatchSyncIsNotCalledOnMain() {
-//   let excludedFiles = [
-//     "Dangerfile"
-//   ]
-//   for file in filter(files: filesChanged, with: [.swift]) {
-//     guard excludedFiles.allSatisfy({ !file.contains($0) }) else { continue }
-//     let fileLines = read(file: file, danger: danger)
-
-//     for (index, line) in fileLines.enumerated() {
-//       if line.contains("DispatchQueue.main.sync") {
-//         let link = "https://stackoverflow.com/questions/44324595/difference-between-dispatchqueue-main-async-and-dispatchqueue-main-sync"
-//         warn(message: "Please async on the main queue. [More information](\(link))",
-//              file: file,
-//              line: index + 1)
-//       }
-//     }
-//   }
-// }
-
-// // MARK: - 10 - Dispatch Async
-
-// func checkDispatchSyncIsNotCalledOnMain() {
-//   let excludedFiles = [
-//     "Dangerfile"
-//   ]
-//   for file in filter(files: filesChanged, with: [.swift]) {
-//     guard excludedFiles.allSatisfy({ !file.contains($0) }) else { continue }
-//     let fileLines = read(file: file, danger: danger)
-
-//     for (index, line) in fileLines.enumerated() {
-//       if line.contains("DispatchQueue.main.sync") {
-//         let link = "https://stackoverflow.com/questions/44324595/difference-between-dispatchqueue-main-async-and-dispatchqueue-main-sync"
-//         warn(message: "Please async on the main queue. [More information](\(link))",
-//              file: file,
-//              line: index + 1)
-//       }
-//     }
-//   }
-// }
-
-// // MARK: - 10 - Dispatch Async
-
-// func checkDispatchSyncIsNotCalledOnMain() {
-//   let excludedFiles = [
-//     "Dangerfile"
-//   ]
-//   for file in filter(files: filesChanged, with: [.swift]) {
-//     guard excludedFiles.allSatisfy({ !file.contains($0) }) else { continue }
-//     let fileLines = read(file: file, danger: danger)
-
-//     for (index, line) in fileLines.enumerated() {
-//       if line.contains("DispatchQueue.main.sync") {
-//         let link = "https://stackoverflow.com/questions/44324595/difference-between-dispatchqueue-main-async-and-dispatchqueue-main-sync"
-//         warn(message: "Please async on the main queue. [More information](\(link))",
-//              file: file,
-//              line: index + 1)
-//       }
-//     }
-//   }
-// }
-
 
 // // MARK: - 10 - Dispatch Async
 
@@ -1038,29 +312,6 @@ v
 //   }
 // }
 
-
-// // MARK: - 10 - Dispatch Async
-
-// func checkDispatchSyncIsNotCalledOnMain() {
-//   let excludedFiles = [
-//     "Dangerfile"
-//   ]
-//   for file in filter(files: filesChanged, with: [.swift]) {
-//     guard excludedFiles.allSatisfy({ !file.contains($0) }) else { continue }
-//     let fileLines = read(file: file, danger: danger)
-
-//     for (index, line) in fileLines.enumerated() {
-//       if line.contains("DispatchQueue.main.sync") {
-//         let link = "https://stackoverflow.com/questions/44324595/difference-between-dispatchqueue-main-async-and-dispatchqueue-main-sync"
-//         warn(message: "Please async on the main queue. [More information](\(link))",
-//              file: file,
-//              line: index + 1)
-//       }
-//     }
-//   }
-// }
-
-
 // // MARK: - 10 - Dispatch Async
 
 // func checkDispatchSyncIsNotCalledOnMain() {
@@ -1103,7 +354,6 @@ v
 //   }
 // }
 
-
 // // MARK: - 10 - Dispatch Async
 
 // func checkDispatchSyncIsNotCalledOnMain() {
@@ -1124,511 +374,6 @@ v
 //     }
 //   }
 // }
-
-
-// // MARK: - 10 - Dispatch Async
-
-// func checkDispatchSyncIsNotCalledOnMain() {
-//   let excludedFiles = [
-//     "Dangerfile"
-//   ]
-//   for file in filter(files: filesChanged, with: [.swift]) {
-//     guard excludedFiles.allSatisfy({ !file.contains($0) }) else { continue }
-//     let fileLines = read(file: file, danger: danger)
-
-//     for (index, line) in fileLines.enumerated() {
-//       if line.contains("DispatchQueue.main.sync") {
-//         let link = "https://stackoverflow.com/questions/44324595/difference-between-dispatchqueue-main-async-and-dispatchqueue-main-sync"
-//         warn(message: "Please async on the main queue. [More information](\(link))",
-//              file: file,
-//              line: index + 1)
-//       }
-//     }
-//   }
-// }
-
-// // MARK: - 10 - Dispatch Async
-
-// func checkDispatchSyncIsNotCalledOnMain() {
-//   let excludedFiles = [
-//     "Dangerfile"
-//   ]
-//   for file in filter(files: filesChanged, with: [.swift]) {
-//     guard excludedFiles.allSatisfy({ !file.contains($0) }) else { continue }
-//     let fileLines = read(file: file, danger: danger)
-
-//     for (index, line) in fileLines.enumerated() {
-//       if line.contains("DispatchQueue.main.sync") {
-//         let link = "https://stackoverflow.com/questions/44324595/difference-between-dispatchqueue-main-async-and-dispatchqueue-main-sync"
-//         warn(message: "Please async on the main queue. [More information](\(link))",
-//              file: file,
-//              line: index + 1)
-//       }
-//     }
-//   }
-// }
-
-
-// // MARK: - 10 - Dispatch Async
-
-// func checkDispatchSyncIsNotCalledOnMain() {
-//   let excludedFiles = [
-//     "Dangerfile"
-//   ]
-//   for file in filter(files: filesChanged, with: [.swift]) {
-//     guard excludedFiles.allSatisfy({ !file.contains($0) }) else { continue }
-//     let fileLines = read(file: file, danger: danger)
-
-//     for (index, line) in fileLines.enumerated() {
-//       if line.contains("DispatchQueue.main.sync") {
-//         let link = "https://stackoverflow.com/questions/44324595/difference-between-dispatchqueue-main-async-and-dispatchqueue-main-sync"
-//         warn(message: "Please async on the main queue. [More information](\(link))",
-//              file: file,
-//              line: index + 1)
-//       }
-//     }
-//   }
-// }
-
-
-// // MARK: - 10 - Dispatch Async
-
-// func checkDispatchSyncIsNotCalledOnMain() {
-//   let excludedFiles = [
-//     "Dangerfile"
-//   ]
-//   for file in filter(files: filesChanged, with: [.swift]) {
-//     guard excludedFiles.allSatisfy({ !file.contains($0) }) else { continue }
-//     let fileLines = read(file: file, danger: danger)
-
-//     for (index, line) in fileLines.enumerated() {
-//       if line.contains("DispatchQueue.main.sync") {
-//         let link = "https://stackoverflow.com/questions/44324595/difference-between-dispatchqueue-main-async-and-dispatchqueue-main-sync"
-//         warn(message: "Please async on the main queue. [More information](\(link))",
-//              file: file,
-//              line: index + 1)
-//       }
-//     }
-//   }
-// }
-v
-
-// // MARK: - 10 - Dispatch Async
-
-// func checkDispatchSyncIsNotCalledOnMain() {
-//   let excludedFiles = [
-//     "Dangerfile"
-//   ]
-//   for file in filter(files: filesChanged, with: [.swift]) {
-//     guard excludedFiles.allSatisfy({ !file.contains($0) }) else { continue }
-//     let fileLines = read(file: file, danger: danger)
-
-//     for (index, line) in fileLines.enumerated() {
-//       if line.contains("DispatchQueue.main.sync") {
-//         let link = "https://stackoverflow.com/questions/44324595/difference-between-dispatchqueue-main-async-and-dispatchqueue-main-sync"
-//         warn(message: "Please async on the main queue. [More information](\(link))",
-//              file: file,
-//              line: index + 1)
-//       }
-//     }
-//   }
-// }
-
-
-// // MARK: - 10 - Dispatch Async
-
-// func checkDispatchSyncIsNotCalledOnMain() {
-//   let excludedFiles = [
-//     "Dangerfile"
-//   ]
-//   for file in filter(files: filesChanged, with: [.swift]) {
-//     guard excludedFiles.allSatisfy({ !file.contains($0) }) else { continue }
-//     let fileLines = read(file: file, danger: danger)
-
-//     for (index, line) in fileLines.enumerated() {
-//       if line.contains("DispatchQueue.main.sync") {
-//         let link = "https://stackoverflow.com/questions/44324595/difference-between-dispatchqueue-main-async-and-dispatchqueue-main-sync"
-//         warn(message: "Please async on the main queue. [More information](\(link))",
-//              file: file,
-//              line: index + 1)
-//       }
-//     }
-//   }
-// }
-
-// // MARK: - 10 - Dispatch Async
-
-// func checkDispatchSyncIsNotCalledOnMain() {
-//   let excludedFiles = [
-//     "Dangerfile"
-//   ]
-//   for file in filter(files: filesChanged, with: [.swift]) {
-//     guard excludedFiles.allSatisfy({ !file.contains($0) }) else { continue }
-//     let fileLines = read(file: file, danger: danger)
-
-//     for (index, line) in fileLines.enumerated() {
-//       if line.contains("DispatchQueue.main.sync") {
-//         let link = "https://stackoverflow.com/questions/44324595/difference-between-dispatchqueue-main-async-and-dispatchqueue-main-sync"
-//         warn(message: "Please async on the main queue. [More information](\(link))",
-//              file: file,
-//              line: index + 1)
-//       }
-//     }
-//   }
-// }
-
-
-// // MARK: - 10 - Dispatch Async
-
-// func checkDispatchSyncIsNotCalledOnMain() {
-//   let excludedFiles = [
-//     "Dangerfile"
-//   ]
-//   for file in filter(files: filesChanged, with: [.swift]) {
-//     guard excludedFiles.allSatisfy({ !file.contains($0) }) else { continue }
-//     let fileLines = read(file: file, danger: danger)
-
-//     for (index, line) in fileLines.enumerated() {
-//       if line.contains("DispatchQueue.main.sync") {
-//         let link = "https://stackoverflow.com/questions/44324595/difference-between-dispatchqueue-main-async-and-dispatchqueue-main-sync"
-//         warn(message: "Please async on the main queue. [More information](\(link))",
-//              file: file,
-//              line: index + 1)
-//       }
-//     }
-//   }
-// }
-
-
-// // MARK: - 10 - Dispatch Async
-
-// func checkDispatchSyncIsNotCalledOnMain() {
-//   let excludedFiles = [
-//     "Dangerfile"
-//   ]
-//   for file in filter(files: filesChanged, with: [.swift]) {
-//     guard excludedFiles.allSatisfy({ !file.contains($0) }) else { continue }
-//     let fileLines = read(file: file, danger: danger)
-
-//     for (index, line) in fileLines.enumerated() {
-//       if line.contains("DispatchQueue.main.sync") {
-//         let link = "https://stackoverflow.com/questions/44324595/difference-between-dispatchqueue-main-async-and-dispatchqueue-main-sync"
-//         warn(message: "Please async on the main queue. [More information](\(link))",
-//              file: file,
-//              line: index + 1)
-//       }
-//     }
-//   }
-// }
-
-
-// // MARK: - 10 - Dispatch Async
-
-// func checkDispatchSyncIsNotCalledOnMain() {
-//   let excludedFiles = [
-//     "Dangerfile"
-//   ]
-//   for file in filter(files: filesChanged, with: [.swift]) {
-//     guard excludedFiles.allSatisfy({ !file.contains($0) }) else { continue }
-//     let fileLines = read(file: file, danger: danger)
-
-//     for (index, line) in fileLines.enumerated() {
-//       if line.contains("DispatchQueue.main.sync") {
-//         let link = "https://stackoverflow.com/questions/44324595/difference-between-dispatchqueue-main-async-and-dispatchqueue-main-sync"
-//         warn(message: "Please async on the main queue. [More information](\(link))",
-//              file: file,
-//              line: index + 1)
-//       }
-//     }
-//   }
-// }
-
-
-// // MARK: - 10 - Dispatch Async
-
-// func checkDispatchSyncIsNotCalledOnMain() {
-//   let excludedFiles = [
-//     "Dangerfile"
-//   ]
-//   for file in filter(files: filesChanged, with: [.swift]) {
-//     guard excludedFiles.allSatisfy({ !file.contains($0) }) else { continue }
-//     let fileLines = read(file: file, danger: danger)
-
-//     for (index, line) in fileLines.enumerated() {
-//       if line.contains("DispatchQueue.main.sync") {
-//         let link = "https://stackoverflow.com/questions/44324595/difference-between-dispatchqueue-main-async-and-dispatchqueue-main-sync"
-//         warn(message: "Please async on the main queue. [More information](\(link))",
-//              file: file,
-//              line: index + 1)
-//       }
-//     }
-//   }
-// }
-
-
-// // MARK: - 10 - Dispatch Async
-
-// func checkDispatchSyncIsNotCalledOnMain() {
-//   let excludedFiles = [
-//     "Dangerfile"
-//   ]
-//   for file in filter(files: filesChanged, with: [.swift]) {
-//     guard excludedFiles.allSatisfy({ !file.contains($0) }) else { continue }
-//     let fileLines = read(file: file, danger: danger)
-
-//     for (index, line) in fileLines.enumerated() {
-//       if line.contains("DispatchQueue.main.sync") {
-//         let link = "https://stackoverflow.com/questions/44324595/difference-between-dispatchqueue-main-async-and-dispatchqueue-main-sync"
-//         warn(message: "Please async on the main queue. [More information](\(link))",
-//              file: file,
-//              line: index + 1)
-//       }
-//     }
-//   }
-// }
-
-
-// // MARK: - 10 - Dispatch Async
-
-// func checkDispatchSyncIsNotCalledOnMain() {
-//   let excludedFiles = [
-//     "Dangerfile"
-//   ]
-//   for file in filter(files: filesChanged, with: [.swift]) {
-//     guard excludedFiles.allSatisfy({ !file.contains($0) }) else { continue }
-//     let fileLines = read(file: file, danger: danger)
-
-//     for (index, line) in fileLines.enumerated() {
-//       if line.contains("DispatchQueue.main.sync") {
-//         let link = "https://stackoverflow.com/questions/44324595/difference-between-dispatchqueue-main-async-and-dispatchqueue-main-sync"
-//         warn(message: "Please async on the main queue. [More information](\(link))",
-//              file: file,
-//              line: index + 1)
-//       }
-//     }
-//   }
-// }
-
-
-// // MARK: - 10 - Dispatch Async
-
-// func checkDispatchSyncIsNotCalledOnMain() {
-//   let excludedFiles = [
-//     "Dangerfile"
-//   ]
-//   for file in filter(files: filesChanged, with: [.swift]) {
-//     guard excludedFiles.allSatisfy({ !file.contains($0) }) else { continue }
-//     let fileLines = read(file: file, danger: danger)
-
-//     for (index, line) in fileLines.enumerated() {
-//       if line.contains("DispatchQueue.main.sync") {
-//         let link = "https://stackoverflow.com/questions/44324595/difference-between-dispatchqueue-main-async-and-dispatchqueue-main-sync"
-//         warn(message: "Please async on the main queue. [More information](\(link))",
-//              file: file,
-//              line: index + 1)
-//       }
-//     }
-//   }
-// }
-
-
-// // MARK: - 10 - Dispatch Async
-
-// func checkDispatchSyncIsNotCalledOnMain() {
-//   let excludedFiles = [
-//     "Dangerfile"
-//   ]
-//   for file in filter(files: filesChanged, with: [.swift]) {
-//     guard excludedFiles.allSatisfy({ !file.contains($0) }) else { continue }
-//     let fileLines = read(file: file, danger: danger)
-
-//     for (index, line) in fileLines.enumerated() {
-//       if line.contains("DispatchQueue.main.sync") {
-//         let link = "https://stackoverflow.com/questions/44324595/difference-between-dispatchqueue-main-async-and-dispatchqueue-main-sync"
-//         warn(message: "Please async on the main queue. [More information](\(link))",
-//              file: file,
-//              line: index + 1)
-//       }
-//     }
-//   }
-// }
-
-
-// // MARK: - 10 - Dispatch Async
-
-// func checkDispatchSyncIsNotCalledOnMain() {
-//   let excludedFiles = [
-//     "Dangerfile"
-//   ]
-//   for file in filter(files: filesChanged, with: [.swift]) {
-//     guard excludedFiles.allSatisfy({ !file.contains($0) }) else { continue }
-//     let fileLines = read(file: file, danger: danger)
-
-//     for (index, line) in fileLines.enumerated() {
-//       if line.contains("DispatchQueue.main.sync") {
-//         let link = "https://stackoverflow.com/questions/44324595/difference-between-dispatchqueue-main-async-and-dispatchqueue-main-sync"
-//         warn(message: "Please async on the main queue. [More information](\(link))",
-//              file: file,
-//              line: index + 1)
-//       }
-//     }
-//   }
-// }
-
-
-// // MARK: - 10 - Dispatch Async
-
-// func checkDispatchSyncIsNotCalledOnMain() {
-//   let excludedFiles = [
-//     "Dangerfile"
-//   ]
-//   for file in filter(files: filesChanged, with: [.swift]) {
-//     guard excludedFiles.allSatisfy({ !file.contains($0) }) else { continue }
-//     let fileLines = read(file: file, danger: danger)
-
-//     for (index, line) in fileLines.enumerated() {
-//       if line.contains("DispatchQueue.main.sync") {
-//         let link = "https://stackoverflow.com/questions/44324595/difference-between-dispatchqueue-main-async-and-dispatchqueue-main-sync"
-//         warn(message: "Please async on the main queue. [More information](\(link))",
-//              file: file,
-//              line: index + 1)
-//       }
-//     }
-//   }
-// }
-
-
-
-// // MARK: - 10 - Dispatch Async
-
-// func checkDispatchSyncIsNotCalledOnMain() {
-//   let excludedFiles = [
-//     "Dangerfile"
-//   ]
-//   for file in filter(files: filesChanged, with: [.swift]) {
-//     guard excludedFiles.allSatisfy({ !file.contains($0) }) else { continue }
-//     let fileLines = read(file: file, danger: danger)
-
-//     for (index, line) in fileLines.enumerated() {
-//       if line.contains("DispatchQueue.main.sync") {
-//         let link = "https://stackoverflow.com/questions/44324595/difference-between-dispatchqueue-main-async-and-dispatchqueue-main-sync"
-//         warn(message: "Please async on the main queue. [More information](\(link))",
-//              file: file,
-//              line: index + 1)
-//       }
-//     }
-//   }
-// }
-
-
-// // MARK: - 10 - Dispatch Async
-
-// func checkDispatchSyncIsNotCalledOnMain() {
-//   let excludedFiles = [
-//     "Dangerfile"
-//   ]
-//   for file in filter(files: filesChanged, with: [.swift]) {
-//     guard excludedFiles.allSatisfy({ !file.contains($0) }) else { continue }
-//     let fileLines = read(file: file, danger: danger)
-
-//     for (index, line) in fileLines.enumerated() {
-//       if line.contains("DispatchQueue.main.sync") {
-//         let link = "https://stackoverflow.com/questions/44324595/difference-between-dispatchqueue-main-async-and-dispatchqueue-main-sync"
-//         warn(message: "Please async on the main queue. [More information](\(link))",
-//              file: file,
-//              line: index + 1)
-//       }
-//     }
-//   }
-// }
-
-
-// // MARK: - 10 - Dispatch Async
-
-// func checkDispatchSyncIsNotCalledOnMain() {
-//   let excludedFiles = [
-//     "Dangerfile"
-//   ]
-//   for file in filter(files: filesChanged, with: [.swift]) {
-//     guard excludedFiles.allSatisfy({ !file.contains($0) }) else { continue }
-//     let fileLines = read(file: file, danger: danger)
-
-//     for (index, line) in fileLines.enumerated() {
-//       if line.contains("DispatchQueue.main.sync") {
-//         let link = "https://stackoverflow.com/questions/44324595/difference-between-dispatchqueue-main-async-and-dispatchqueue-main-sync"
-//         warn(message: "Please async on the main queue. [More information](\(link))",
-//              file: file,
-//              line: index + 1)
-//       }
-//     }
-//   }
-// }
-
-
-// // MARK: - 10 - Dispatch Async
-
-// func checkDispatchSyncIsNotCalledOnMain() {
-//   let excludedFiles = [
-//     "Dangerfile"
-//   ]
-//   for file in filter(files: filesChanged, with: [.swift]) {
-//     guard excludedFiles.allSatisfy({ !file.contains($0) }) else { continue }
-//     let fileLines = read(file: file, danger: danger)
-
-//     for (index, line) in fileLines.enumerated() {
-//       if line.contains("DispatchQueue.main.sync") {
-//         let link = "https://stackoverflow.com/questions/44324595/difference-between-dispatchqueue-main-async-and-dispatchqueue-main-sync"
-//         warn(message: "Please async on the main queue. [More information](\(link))",
-//              file: file,
-//              line: index + 1)
-//       }
-//     }
-//   }
-// }
-
-// // MARK: - 10 - Dispatch Async
-
-// func checkDispatchSyncIsNotCalledOnMain() {
-//   let excludedFiles = [
-//     "Dangerfile"
-//   ]
-//   for file in filter(files: filesChanged, with: [.swift]) {
-//     guard excludedFiles.allSatisfy({ !file.contains($0) }) else { continue }
-//     let fileLines = read(file: file, danger: danger)
-
-//     for (index, line) in fileLines.enumerated() {
-//       if line.contains("DispatchQueue.main.sync") {
-//         let link = "https://stackoverflow.com/questions/44324595/difference-between-dispatchqueue-main-async-and-dispatchqueue-main-sync"
-//         warn(message: "Please async on the main queue. [More information](\(link))",
-//              file: file,
-//              line: index + 1)
-//       }
-//     }
-//   }
-// }
-
-
-// // MARK: - 10 - Dispatch Async
-
-// func checkDispatchSyncIsNotCalledOnMain() {
-//   let excludedFiles = [
-//     "Dangerfile"
-//   ]
-//   for file in filter(files: filesChanged, with: [.swift]) {
-//     guard excludedFiles.allSatisfy({ !file.contains($0) }) else { continue }
-//     let fileLines = read(file: file, danger: danger)
-
-//     for (index, line) in fileLines.enumerated() {
-//       if line.contains("DispatchQueue.main.sync") {
-//         let link = "https://stackoverflow.com/questions/44324595/difference-between-dispatchqueue-main-async-and-dispatchqueue-main-sync"
-//         warn(message: "Please async on the main queue. [More information](\(link))",
-//              file: file,
-//              line: index + 1)
-//       }
-//     }
-//   }
-// }
-
 
 // // MARK: - 10 - Dispatch Async
 
@@ -1693,6 +438,509 @@ v
 //   }
 // }
 
+// // MARK: - 10 - Dispatch Async
+
+// func checkDispatchSyncIsNotCalledOnMain() {
+//   let excludedFiles = [
+//     "Dangerfile"
+//   ]
+//   for file in filter(files: filesChanged, with: [.swift]) {
+//     guard excludedFiles.allSatisfy({ !file.contains($0) }) else { continue }
+//     let fileLines = read(file: file, danger: danger)
+
+//     for (index, line) in fileLines.enumerated() {
+//       if line.contains("DispatchQueue.main.sync") {
+//         let link = "https://stackoverflow.com/questions/44324595/difference-between-dispatchqueue-main-async-and-dispatchqueue-main-sync"
+//         warn(message: "Please async on the main queue. [More information](\(link))",
+//              file: file,
+//              line: index + 1)
+//       }
+//     }
+//   }
+// }
+
+// // MARK: - 10 - Dispatch Async
+
+// func checkDispatchSyncIsNotCalledOnMain() {
+//   let excludedFiles = [
+//     "Dangerfile"
+//   ]
+//   for file in filter(files: filesChanged, with: [.swift]) {
+//     guard excludedFiles.allSatisfy({ !file.contains($0) }) else { continue }
+//     let fileLines = read(file: file, danger: danger)
+
+//     for (index, line) in fileLines.enumerated() {
+//       if line.contains("DispatchQueue.main.sync") {
+//         let link = "https://stackoverflow.com/questions/44324595/difference-between-dispatchqueue-main-async-and-dispatchqueue-main-sync"
+//         warn(message: "Please async on the main queue. [More information](\(link))",
+//              file: file,
+//              line: index + 1)
+//       }
+//     }
+//   }
+// }
+
+// // MARK: - 10 - Dispatch Async
+
+// func checkDispatchSyncIsNotCalledOnMain() {
+//   let excludedFiles = [
+//     "Dangerfile"
+//   ]
+//   for file in filter(files: filesChanged, with: [.swift]) {
+//     guard excludedFiles.allSatisfy({ !file.contains($0) }) else { continue }
+//     let fileLines = read(file: file, danger: danger)
+
+//     for (index, line) in fileLines.enumerated() {
+//       if line.contains("DispatchQueue.main.sync") {
+//         let link = "https://stackoverflow.com/questions/44324595/difference-between-dispatchqueue-main-async-and-dispatchqueue-main-sync"
+//         warn(message: "Please async on the main queue. [More information](\(link))",
+//              file: file,
+//              line: index + 1)
+//       }
+//     }
+//   }
+// }
+
+// // MARK: - 10 - Dispatch Async
+
+// func checkDispatchSyncIsNotCalledOnMain() {
+//   let excludedFiles = [
+//     "Dangerfile"
+//   ]
+//   for file in filter(files: filesChanged, with: [.swift]) {
+//     guard excludedFiles.allSatisfy({ !file.contains($0) }) else { continue }
+//     let fileLines = read(file: file, danger: danger)
+
+//     for (index, line) in fileLines.enumerated() {
+//       if line.contains("DispatchQueue.main.sync") {
+//         let link = "https://stackoverflow.com/questions/44324595/difference-between-dispatchqueue-main-async-and-dispatchqueue-main-sync"
+//         warn(message: "Please async on the main queue. [More information](\(link))",
+//              file: file,
+//              line: index + 1)
+//       }
+//     }
+//   }
+// }
+
+// // MARK: - 10 - Dispatch Async
+
+// func checkDispatchSyncIsNotCalledOnMain() {
+//   let excludedFiles = [
+//     "Dangerfile"
+//   ]
+//   for file in filter(files: filesChanged, with: [.swift]) {
+//     guard excludedFiles.allSatisfy({ !file.contains($0) }) else { continue }
+//     let fileLines = read(file: file, danger: danger)
+
+//     for (index, line) in fileLines.enumerated() {
+//       if line.contains("DispatchQueue.main.sync") {
+//         let link = "https://stackoverflow.com/questions/44324595/difference-between-dispatchqueue-main-async-and-dispatchqueue-main-sync"
+//         warn(message: "Please async on the main queue. [More information](\(link))",
+//              file: file,
+//              line: index + 1)
+//       }
+//     }
+//   }
+// }
+
+// // MARK: - 10 - Dispatch Async
+
+// func checkDispatchSyncIsNotCalledOnMain() {
+//   let excludedFiles = [
+//     "Dangerfile"
+//   ]
+//   for file in filter(files: filesChanged, with: [.swift]) {
+//     guard excludedFiles.allSatisfy({ !file.contains($0) }) else { continue }
+//     let fileLines = read(file: file, danger: danger)
+
+//     for (index, line) in fileLines.enumerated() {
+//       if line.contains("DispatchQueue.main.sync") {
+//         let link = "https://stackoverflow.com/questions/44324595/difference-between-dispatchqueue-main-async-and-dispatchqueue-main-sync"
+//         warn(message: "Please async on the main queue. [More information](\(link))",
+//              file: file,
+//              line: index + 1)
+//       }
+//     }
+//   }
+// }
+
+// // MARK: - 10 - Dispatch Async
+
+// func checkDispatchSyncIsNotCalledOnMain() {
+//   let excludedFiles = [
+//     "Dangerfile"
+//   ]
+//   for file in filter(files: filesChanged, with: [.swift]) {
+//     guard excludedFiles.allSatisfy({ !file.contains($0) }) else { continue }
+//     let fileLines = read(file: file, danger: danger)
+
+//     for (index, line) in fileLines.enumerated() {
+//       if line.contains("DispatchQueue.main.sync") {
+//         let link = "https://stackoverflow.com/questions/44324595/difference-between-dispatchqueue-main-async-and-dispatchqueue-main-sync"
+//         warn(message: "Please async on the main queue. [More information](\(link))",
+//              file: file,
+//              line: index + 1)
+//       }
+//     }
+//   }
+// }
+
+// // MARK: - 10 - Dispatch Async
+
+// func checkDispatchSyncIsNotCalledOnMain() {
+//   let excludedFiles = [
+//     "Dangerfile"
+//   ]
+//   for file in filter(files: filesChanged, with: [.swift]) {
+//     guard excludedFiles.allSatisfy({ !file.contains($0) }) else { continue }
+//     let fileLines = read(file: file, danger: danger)
+
+//     for (index, line) in fileLines.enumerated() {
+//       if line.contains("DispatchQueue.main.sync") {
+//         let link = "https://stackoverflow.com/questions/44324595/difference-between-dispatchqueue-main-async-and-dispatchqueue-main-sync"
+//         warn(message: "Please async on the main queue. [More information](\(link))",
+//              file: file,
+//              line: index + 1)
+//       }
+//     }
+//   }
+// }
+
+// // MARK: - 10 - Dispatch Async
+
+// func checkDispatchSyncIsNotCalledOnMain() {
+//   let excludedFiles = [
+//     "Dangerfile"
+//   ]
+//   for file in filter(files: filesChanged, with: [.swift]) {
+//     guard excludedFiles.allSatisfy({ !file.contains($0) }) else { continue }
+//     let fileLines = read(file: file, danger: danger)
+
+//     for (index, line) in fileLines.enumerated() {
+//       if line.contains("DispatchQueue.main.sync") {
+//         let link = "https://stackoverflow.com/questions/44324595/difference-between-dispatchqueue-main-async-and-dispatchqueue-main-sync"
+//         warn(message: "Please async on the main queue. [More information](\(link))",
+//              file: file,
+//              line: index + 1)
+//       }
+//     }
+//   }
+// }
+
+// // MARK: - 10 - Dispatch Async
+
+// func checkDispatchSyncIsNotCalledOnMain() {
+//   let excludedFiles = [
+//     "Dangerfile"
+//   ]
+//   for file in filter(files: filesChanged, with: [.swift]) {
+//     guard excludedFiles.allSatisfy({ !file.contains($0) }) else { continue }
+//     let fileLines = read(file: file, danger: danger)
+
+//     for (index, line) in fileLines.enumerated() {
+//       if line.contains("DispatchQueue.main.sync") {
+//         let link = "https://stackoverflow.com/questions/44324595/difference-between-dispatchqueue-main-async-and-dispatchqueue-main-sync"
+//         warn(message: "Please async on the main queue. [More information](\(link))",
+//              file: file,
+//              line: index + 1)
+//       }
+//     }
+//   }
+// }
+
+// // MARK: - 10 - Dispatch Async
+
+// func checkDispatchSyncIsNotCalledOnMain() {
+//   let excludedFiles = [
+//     "Dangerfile"
+//   ]
+//   for file in filter(files: filesChanged, with: [.swift]) {
+//     guard excludedFiles.allSatisfy({ !file.contains($0) }) else { continue }
+//     let fileLines = read(file: file, danger: danger)
+
+//     for (index, line) in fileLines.enumerated() {
+//       if line.contains("DispatchQueue.main.sync") {
+//         let link = "https://stackoverflow.com/questions/44324595/difference-between-dispatchqueue-main-async-and-dispatchqueue-main-sync"
+//         warn(message: "Please async on the main queue. [More information](\(link))",
+//              file: file,
+//              line: index + 1)
+//       }
+//     }
+//   }
+// }
+
+// // MARK: - 10 - Dispatch Async
+
+// func checkDispatchSyncIsNotCalledOnMain() {
+//   let excludedFiles = [
+//     "Dangerfile"
+//   ]
+//   for file in filter(files: filesChanged, with: [.swift]) {
+//     guard excludedFiles.allSatisfy({ !file.contains($0) }) else { continue }
+//     let fileLines = read(file: file, danger: danger)
+
+//     for (index, line) in fileLines.enumerated() {
+//       if line.contains("DispatchQueue.main.sync") {
+//         let link = "https://stackoverflow.com/questions/44324595/difference-between-dispatchqueue-main-async-and-dispatchqueue-main-sync"
+//         warn(message: "Please async on the main queue. [More information](\(link))",
+//              file: file,
+//              line: index + 1)
+//       }
+//     }
+//   }
+// }
+
+// // MARK: - 10 - Dispatch Async
+
+// func checkDispatchSyncIsNotCalledOnMain() {
+//   let excludedFiles = [
+//     "Dangerfile"
+//   ]
+//   for file in filter(files: filesChanged, with: [.swift]) {
+//     guard excludedFiles.allSatisfy({ !file.contains($0) }) else { continue }
+//     let fileLines = read(file: file, danger: danger)
+
+//     for (index, line) in fileLines.enumerated() {
+//       if line.contains("DispatchQueue.main.sync") {
+//         let link = "https://stackoverflow.com/questions/44324595/difference-between-dispatchqueue-main-async-and-dispatchqueue-main-sync"
+//         warn(message: "Please async on the main queue. [More information](\(link))",
+//              file: file,
+//              line: index + 1)
+//       }
+//     }
+//   }
+// }
+
+// // MARK: - 10 - Dispatch Async
+
+// func checkDispatchSyncIsNotCalledOnMain() {
+//   let excludedFiles = [
+//     "Dangerfile"
+//   ]
+//   for file in filter(files: filesChanged, with: [.swift]) {
+//     guard excludedFiles.allSatisfy({ !file.contains($0) }) else { continue }
+//     let fileLines = read(file: file, danger: danger)
+
+//     for (index, line) in fileLines.enumerated() {
+//       if line.contains("DispatchQueue.main.sync") {
+//         let link = "https://stackoverflow.com/questions/44324595/difference-between-dispatchqueue-main-async-and-dispatchqueue-main-sync"
+//         warn(message: "Please async on the main queue. [More information](\(link))",
+//              file: file,
+//              line: index + 1)
+//       }
+//     }
+//   }
+// }
+
+// // MARK: - 10 - Dispatch Async
+
+// func checkDispatchSyncIsNotCalledOnMain() {
+//   let excludedFiles = [
+//     "Dangerfile"
+//   ]
+//   for file in filter(files: filesChanged, with: [.swift]) {
+//     guard excludedFiles.allSatisfy({ !file.contains($0) }) else { continue }
+//     let fileLines = read(file: file, danger: danger)
+
+//     for (index, line) in fileLines.enumerated() {
+//       if line.contains("DispatchQueue.main.sync") {
+//         let link = "https://stackoverflow.com/questions/44324595/difference-between-dispatchqueue-main-async-and-dispatchqueue-main-sync"
+//         warn(message: "Please async on the main queue. [More information](\(link))",
+//              file: file,
+//              line: index + 1)
+//       }
+//     }
+//   }
+// }
+
+// // MARK: - 10 - Dispatch Async
+
+// func checkDispatchSyncIsNotCalledOnMain() {
+//   let excludedFiles = [
+//     "Dangerfile"
+//   ]
+//   for file in filter(files: filesChanged, with: [.swift]) {
+//     guard excludedFiles.allSatisfy({ !file.contains($0) }) else { continue }
+//     let fileLines = read(file: file, danger: danger)
+
+//     for (index, line) in fileLines.enumerated() {
+//       if line.contains("DispatchQueue.main.sync") {
+//         let link = "https://stackoverflow.com/questions/44324595/difference-between-dispatchqueue-main-async-and-dispatchqueue-main-sync"
+//         warn(message: "Please async on the main queue. [More information](\(link))",
+//              file: file,
+//              line: index + 1)
+//       }
+//     }
+//   }
+// }
+
+// // MARK: - 10 - Dispatch Async
+
+// func checkDispatchSyncIsNotCalledOnMain() {
+//   let excludedFiles = [
+//     "Dangerfile"
+//   ]
+//   for file in filter(files: filesChanged, with: [.swift]) {
+//     guard excludedFiles.allSatisfy({ !file.contains($0) }) else { continue }
+//     let fileLines = read(file: file, danger: danger)
+
+//     for (index, line) in fileLines.enumerated() {
+//       if line.contains("DispatchQueue.main.sync") {
+//         let link = "https://stackoverflow.com/questions/44324595/difference-between-dispatchqueue-main-async-and-dispatchqueue-main-sync"
+//         warn(message: "Please async on the main queue. [More information](\(link))",
+//              file: file,
+//              line: index + 1)
+//       }
+//     }
+//   }
+// }
+
+// // MARK: - 10 - Dispatch Async
+
+// func checkDispatchSyncIsNotCalledOnMain() {
+//   let excludedFiles = [
+//     "Dangerfile"
+//   ]
+//   for file in filter(files: filesChanged, with: [.swift]) {
+//     guard excludedFiles.allSatisfy({ !file.contains($0) }) else { continue }
+//     let fileLines = read(file: file, danger: danger)
+
+//     for (index, line) in fileLines.enumerated() {
+//       if line.contains("DispatchQueue.main.sync") {
+//         let link = "https://stackoverflow.com/questions/44324595/difference-between-dispatchqueue-main-async-and-dispatchqueue-main-sync"
+//         warn(message: "Please async on the main queue. [More information](\(link))",
+//              file: file,
+//              line: index + 1)
+//       }
+//     }
+//   }
+// }
+
+// // MARK: - 10 - Dispatch Async
+
+// func checkDispatchSyncIsNotCalledOnMain() {
+//   let excludedFiles = [
+//     "Dangerfile"
+//   ]
+//   for file in filter(files: filesChanged, with: [.swift]) {
+//     guard excludedFiles.allSatisfy({ !file.contains($0) }) else { continue }
+//     let fileLines = read(file: file, danger: danger)
+
+//     for (index, line) in fileLines.enumerated() {
+//       if line.contains("DispatchQueue.main.sync") {
+//         let link = "https://stackoverflow.com/questions/44324595/difference-between-dispatchqueue-main-async-and-dispatchqueue-main-sync"
+//         warn(message: "Please async on the main queue. [More information](\(link))",
+//              file: file,
+//              line: index + 1)
+//       }
+//     }
+//   }
+// }
+
+// // MARK: - 10 - Dispatch Async
+
+// func checkDispatchSyncIsNotCalledOnMain() {
+//   let excludedFiles = [
+//     "Dangerfile"
+//   ]
+//   for file in filter(files: filesChanged, with: [.swift]) {
+//     guard excludedFiles.allSatisfy({ !file.contains($0) }) else { continue }
+//     let fileLines = read(file: file, danger: danger)
+
+//     for (index, line) in fileLines.enumerated() {
+//       if line.contains("DispatchQueue.main.sync") {
+//         let link = "https://stackoverflow.com/questions/44324595/difference-between-dispatchqueue-main-async-and-dispatchqueue-main-sync"
+//         warn(message: "Please async on the main queue. [More information](\(link))",
+//              file: file,
+//              line: index + 1)
+//       }
+//     }
+//   }
+// }
+
+// // MARK: - 10 - Dispatch Async
+
+// func checkDispatchSyncIsNotCalledOnMain() {
+//   let excludedFiles = [
+//     "Dangerfile"
+//   ]
+//   for file in filter(files: filesChanged, with: [.swift]) {
+//     guard excludedFiles.allSatisfy({ !file.contains($0) }) else { continue }
+//     let fileLines = read(file: file, danger: danger)
+
+//     for (index, line) in fileLines.enumerated() {
+//       if line.contains("DispatchQueue.main.sync") {
+//         let link = "https://stackoverflow.com/questions/44324595/difference-between-dispatchqueue-main-async-and-dispatchqueue-main-sync"
+//         warn(message: "Please async on the main queue. [More information](\(link))",
+//              file: file,
+//              line: index + 1)
+//       }
+//     }
+//   }
+// }
+
+// // MARK: - 10 - Dispatch Async
+
+// func checkDispatchSyncIsNotCalledOnMain() {
+//   let excludedFiles = [
+//     "Dangerfile"
+//   ]
+//   for file in filter(files: filesChanged, with: [.swift]) {
+//     guard excludedFiles.allSatisfy({ !file.contains($0) }) else { continue }
+//     let fileLines = read(file: file, danger: danger)
+
+//     for (index, line) in fileLines.enumerated() {
+//       if line.contains("DispatchQueue.main.sync") {
+//         let link = "https://stackoverflow.com/questions/44324595/difference-between-dispatchqueue-main-async-and-dispatchqueue-main-sync"
+//         warn(message: "Please async on the main queue. [More information](\(link))",
+//              file: file,
+//              line: index + 1)
+//       }
+//     }
+//   }
+// }
+
+// // MARK: - 10 - Dispatch Async
+
+// func checkDispatchSyncIsNotCalledOnMain() {
+//   let excludedFiles = [
+//     "Dangerfile"
+//   ]
+//   for file in filter(files: filesChanged, with: [.swift]) {
+//     guard excludedFiles.allSatisfy({ !file.contains($0) }) else { continue }
+//     let fileLines = read(file: file, danger: danger)
+
+//     for (index, line) in fileLines.enumerated() {
+//       if line.contains("DispatchQueue.main.sync") {
+//         let link = "https://stackoverflow.com/questions/44324595/difference-between-dispatchqueue-main-async-and-dispatchqueue-main-sync"
+//         warn(message: "Please async on the main queue. [More information](\(link))",
+//              file: file,
+//              line: index + 1)
+//       }
+//     }
+//   }
+// }
+
+// // MARK: - 10 - Dispatch Async
+
+// func checkDispatchSyncIsNotCalledOnMain() {
+//   let excludedFiles = [
+//     "Dangerfile"
+//   ]
+//   for file in filter(files: filesChanged, with: [.swift]) {
+//     guard excludedFiles.allSatisfy({ !file.contains($0) }) else { continue }
+//     let fileLines = read(file: file, danger: danger)
+
+//     for (index, line) in fileLines.enumerated() {
+//       if line.contains("DispatchQueue.main.sync") {
+//         let link = "https://stackoverflow.com/questions/44324595/difference-between-dispatchqueue-main-async-and-dispatchqueue-main-sync"
+//         warn(message: "Please async on the main queue. [More information](\(link))",
+//              file: file,
+//              line: index + 1)
+//       }
+//     }
+//   }
+// }
 
 // // MARK: - 10 - Dispatch Async
 
@@ -1757,29 +1005,6 @@ v
 //   }
 // }
 
-
-// // MARK: - 10 - Dispatch Async
-
-// func checkDispatchSyncIsNotCalledOnMain() {
-//   let excludedFiles = [
-//     "Dangerfile"
-//   ]
-//   for file in filter(files: filesChanged, with: [.swift]) {
-//     guard excludedFiles.allSatisfy({ !file.contains($0) }) else { continue }
-//     let fileLines = read(file: file, danger: danger)
-
-//     for (index, line) in fileLines.enumerated() {
-//       if line.contains("DispatchQueue.main.sync") {
-//         let link = "https://stackoverflow.com/questions/44324595/difference-between-dispatchqueue-main-async-and-dispatchqueue-main-sync"
-//         warn(message: "Please async on the main queue. [More information](\(link))",
-//              file: file,
-//              line: index + 1)
-//       }
-//     }
-//   }
-// }
-
-
 // // MARK: - 10 - Dispatch Async
 
 // func checkDispatchSyncIsNotCalledOnMain() {
@@ -1821,29 +1046,6 @@ v
 //     }
 //   }
 // }
-
-
-// // MARK: - 10 - Dispatch Async
-
-// func checkDispatchSyncIsNotCalledOnMain() {
-//   let excludedFiles = [
-//     "Dangerfile"
-//   ]
-//   for file in filter(files: filesChanged, with: [.swift]) {
-//     guard excludedFiles.allSatisfy({ !file.contains($0) }) else { continue }
-//     let fileLines = read(file: file, danger: danger)
-
-//     for (index, line) in fileLines.enumerated() {
-//       if line.contains("DispatchQueue.main.sync") {
-//         let link = "https://stackoverflow.com/questions/44324595/difference-between-dispatchqueue-main-async-and-dispatchqueue-main-sync"
-//         warn(message: "Please async on the main queue. [More information](\(link))",
-//              file: file,
-//              line: index + 1)
-//       }
-//     }
-//   }
-// }
-
 
 // // MARK: - 10 - Dispatch Async
 
@@ -1887,7 +1089,6 @@ v
 //   }
 // }
 
-
 // // MARK: - 10 - Dispatch Async
 
 // func checkDispatchSyncIsNotCalledOnMain() {
@@ -1909,7 +1110,6 @@ v
 //   }
 // }
 
-
 // // MARK: - 10 - Dispatch Async
 
 // func checkDispatchSyncIsNotCalledOnMain() {
@@ -1930,29 +1130,6 @@ v
 //     }
 //   }
 // }
-v
-
-// // MARK: - 10 - Dispatch Async
-
-// func checkDispatchSyncIsNotCalledOnMain() {
-//   let excludedFiles = [
-//     "Dangerfile"
-//   ]
-//   for file in filter(files: filesChanged, with: [.swift]) {
-//     guard excludedFiles.allSatisfy({ !file.contains($0) }) else { continue }
-//     let fileLines = read(file: file, danger: danger)
-
-//     for (index, line) in fileLines.enumerated() {
-//       if line.contains("DispatchQueue.main.sync") {
-//         let link = "https://stackoverflow.com/questions/44324595/difference-between-dispatchqueue-main-async-and-dispatchqueue-main-sync"
-//         warn(message: "Please async on the main queue. [More information](\(link))",
-//              file: file,
-//              line: index + 1)
-//       }
-//     }
-//   }
-// }
-
 
 // // MARK: - 10 - Dispatch Async
 
@@ -1996,6 +1173,26 @@ v
 //   }
 // }
 
+// // MARK: - 10 - Dispatch Async
+
+// func checkDispatchSyncIsNotCalledOnMain() {
+//   let excludedFiles = [
+//     "Dangerfile"
+//   ]
+//   for file in filter(files: filesChanged, with: [.swift]) {
+//     guard excludedFiles.allSatisfy({ !file.contains($0) }) else { continue }
+//     let fileLines = read(file: file, danger: danger)
+
+//     for (index, line) in fileLines.enumerated() {
+//       if line.contains("DispatchQueue.main.sync") {
+//         let link = "https://stackoverflow.com/questions/44324595/difference-between-dispatchqueue-main-async-and-dispatchqueue-main-sync"
+//         warn(message: "Please async on the main queue. [More information](\(link))",
+//              file: file,
+//              line: index + 1)
+//       }
+//     }
+//   }
+// }
 
 // // MARK: - 10 - Dispatch Async
 
@@ -2018,6 +1215,26 @@ v
 //   }
 // }
 
+// // MARK: - 10 - Dispatch Async
+
+// func checkDispatchSyncIsNotCalledOnMain() {
+//   let excludedFiles = [
+//     "Dangerfile"
+//   ]
+//   for file in filter(files: filesChanged, with: [.swift]) {
+//     guard excludedFiles.allSatisfy({ !file.contains($0) }) else { continue }
+//     let fileLines = read(file: file, danger: danger)
+
+//     for (index, line) in fileLines.enumerated() {
+//       if line.contains("DispatchQueue.main.sync") {
+//         let link = "https://stackoverflow.com/questions/44324595/difference-between-dispatchqueue-main-async-and-dispatchqueue-main-sync"
+//         warn(message: "Please async on the main queue. [More information](\(link))",
+//              file: file,
+//              line: index + 1)
+//       }
+//     }
+//   }
+// }
 
 // // MARK: - 10 - Dispatch Async
 
@@ -2040,6 +1257,26 @@ v
 //   }
 // }
 
+// // MARK: - 10 - Dispatch Async
+
+// func checkDispatchSyncIsNotCalledOnMain() {
+//   let excludedFiles = [
+//     "Dangerfile"
+//   ]
+//   for file in filter(files: filesChanged, with: [.swift]) {
+//     guard excludedFiles.allSatisfy({ !file.contains($0) }) else { continue }
+//     let fileLines = read(file: file, danger: danger)
+
+//     for (index, line) in fileLines.enumerated() {
+//       if line.contains("DispatchQueue.main.sync") {
+//         let link = "https://stackoverflow.com/questions/44324595/difference-between-dispatchqueue-main-async-and-dispatchqueue-main-sync"
+//         warn(message: "Please async on the main queue. [More information](\(link))",
+//              file: file,
+//              line: index + 1)
+//       }
+//     }
+//   }
+// }
 
 // // MARK: - 10 - Dispatch Async
 
@@ -2062,6 +1299,26 @@ v
 //   }
 // }
 
+// // MARK: - 10 - Dispatch Async
+
+// func checkDispatchSyncIsNotCalledOnMain() {
+//   let excludedFiles = [
+//     "Dangerfile"
+//   ]
+//   for file in filter(files: filesChanged, with: [.swift]) {
+//     guard excludedFiles.allSatisfy({ !file.contains($0) }) else { continue }
+//     let fileLines = read(file: file, danger: danger)
+
+//     for (index, line) in fileLines.enumerated() {
+//       if line.contains("DispatchQueue.main.sync") {
+//         let link = "https://stackoverflow.com/questions/44324595/difference-between-dispatchqueue-main-async-and-dispatchqueue-main-sync"
+//         warn(message: "Please async on the main queue. [More information](\(link))",
+//              file: file,
+//              line: index + 1)
+//       }
+//     }
+//   }
+// }
 
 // // MARK: - 10 - Dispatch Async
 
@@ -2084,6 +1341,26 @@ v
 //   }
 // }
 
+// // MARK: - 10 - Dispatch Async
+
+// func checkDispatchSyncIsNotCalledOnMain() {
+//   let excludedFiles = [
+//     "Dangerfile"
+//   ]
+//   for file in filter(files: filesChanged, with: [.swift]) {
+//     guard excludedFiles.allSatisfy({ !file.contains($0) }) else { continue }
+//     let fileLines = read(file: file, danger: danger)
+
+//     for (index, line) in fileLines.enumerated() {
+//       if line.contains("DispatchQueue.main.sync") {
+//         let link = "https://stackoverflow.com/questions/44324595/difference-between-dispatchqueue-main-async-and-dispatchqueue-main-sync"
+//         warn(message: "Please async on the main queue. [More information](\(link))",
+//              file: file,
+//              line: index + 1)
+//       }
+//     }
+//   }
+// }
 
 // // MARK: - 10 - Dispatch Async
 
@@ -2106,6 +1383,26 @@ v
 //   }
 // }
 
+// // MARK: - 10 - Dispatch Async
+
+// func checkDispatchSyncIsNotCalledOnMain() {
+//   let excludedFiles = [
+//     "Dangerfile"
+//   ]
+//   for file in filter(files: filesChanged, with: [.swift]) {
+//     guard excludedFiles.allSatisfy({ !file.contains($0) }) else { continue }
+//     let fileLines = read(file: file, danger: danger)
+
+//     for (index, line) in fileLines.enumerated() {
+//       if line.contains("DispatchQueue.main.sync") {
+//         let link = "https://stackoverflow.com/questions/44324595/difference-between-dispatchqueue-main-async-and-dispatchqueue-main-sync"
+//         warn(message: "Please async on the main queue. [More information](\(link))",
+//              file: file,
+//              line: index + 1)
+//       }
+//     }
+//   }
+// }
 
 // // MARK: - 10 - Dispatch Async
 
@@ -2128,6 +1425,26 @@ v
 //   }
 // }
 
+// // MARK: - 10 - Dispatch Async
+
+// func checkDispatchSyncIsNotCalledOnMain() {
+//   let excludedFiles = [
+//     "Dangerfile"
+//   ]
+//   for file in filter(files: filesChanged, with: [.swift]) {
+//     guard excludedFiles.allSatisfy({ !file.contains($0) }) else { continue }
+//     let fileLines = read(file: file, danger: danger)
+
+//     for (index, line) in fileLines.enumerated() {
+//       if line.contains("DispatchQueue.main.sync") {
+//         let link = "https://stackoverflow.com/questions/44324595/difference-between-dispatchqueue-main-async-and-dispatchqueue-main-sync"
+//         warn(message: "Please async on the main queue. [More information](\(link))",
+//              file: file,
+//              line: index + 1)
+//       }
+//     }
+//   }
+// }
 
 // // MARK: - 10 - Dispatch Async
 
@@ -2150,6 +1467,26 @@ v
 //   }
 // }
 
+// // MARK: - 10 - Dispatch Async
+
+// func checkDispatchSyncIsNotCalledOnMain() {
+//   let excludedFiles = [
+//     "Dangerfile"
+//   ]
+//   for file in filter(files: filesChanged, with: [.swift]) {
+//     guard excludedFiles.allSatisfy({ !file.contains($0) }) else { continue }
+//     let fileLines = read(file: file, danger: danger)
+
+//     for (index, line) in fileLines.enumerated() {
+//       if line.contains("DispatchQueue.main.sync") {
+//         let link = "https://stackoverflow.com/questions/44324595/difference-between-dispatchqueue-main-async-and-dispatchqueue-main-sync"
+//         warn(message: "Please async on the main queue. [More information](\(link))",
+//              file: file,
+//              line: index + 1)
+//       }
+//     }
+//   }
+// }
 
 // // MARK: - 10 - Dispatch Async
 
@@ -2172,6 +1509,26 @@ v
 //   }
 // }
 
+// // MARK: - 10 - Dispatch Async
+
+// func checkDispatchSyncIsNotCalledOnMain() {
+//   let excludedFiles = [
+//     "Dangerfile"
+//   ]
+//   for file in filter(files: filesChanged, with: [.swift]) {
+//     guard excludedFiles.allSatisfy({ !file.contains($0) }) else { continue }
+//     let fileLines = read(file: file, danger: danger)
+
+//     for (index, line) in fileLines.enumerated() {
+//       if line.contains("DispatchQueue.main.sync") {
+//         let link = "https://stackoverflow.com/questions/44324595/difference-between-dispatchqueue-main-async-and-dispatchqueue-main-sync"
+//         warn(message: "Please async on the main queue. [More information](\(link))",
+//              file: file,
+//              line: index + 1)
+//       }
+//     }
+//   }
+// }
 
 // // MARK: - 10 - Dispatch Async
 
@@ -2194,6 +1551,572 @@ v
 //   }
 // }
 
+// // MARK: - 10 - Dispatch Async
+
+// func checkDispatchSyncIsNotCalledOnMain() {
+//   let excludedFiles = [
+//     "Dangerfile"
+//   ]
+//   for file in filter(files: filesChanged, with: [.swift]) {
+//     guard excludedFiles.allSatisfy({ !file.contains($0) }) else { continue }
+//     let fileLines = read(file: file, danger: danger)
+
+//     for (index, line) in fileLines.enumerated() {
+//       if line.contains("DispatchQueue.main.sync") {
+//         let link = "https://stackoverflow.com/questions/44324595/difference-between-dispatchqueue-main-async-and-dispatchqueue-main-sync"
+//         warn(message: "Please async on the main queue. [More information](\(link))",
+//              file: file,
+//              line: index + 1)
+//       }
+//     }
+//   }
+// }
+
+// // MARK: - 10 - Dispatch Async
+
+// func checkDispatchSyncIsNotCalledOnMain() {
+//   let excludedFiles = [
+//     "Dangerfile"
+//   ]
+//   for file in filter(files: filesChanged, with: [.swift]) {
+//     guard excludedFiles.allSatisfy({ !file.contains($0) }) else { continue }
+//     let fileLines = read(file: file, danger: danger)
+
+//     for (index, line) in fileLines.enumerated() {
+//       if line.contains("DispatchQueue.main.sync") {
+//         let link = "https://stackoverflow.com/questions/44324595/difference-between-dispatchqueue-main-async-and-dispatchqueue-main-sync"
+//         warn(message: "Please async on the main queue. [More information](\(link))",
+//              file: file,
+//              line: index + 1)
+//       }
+//     }
+//   }
+// }
+
+// // MARK: - 10 - Dispatch Async
+
+// func checkDispatchSyncIsNotCalledOnMain() {
+//   let excludedFiles = [
+//     "Dangerfile"
+//   ]
+//   for file in filter(files: filesChanged, with: [.swift]) {
+//     guard excludedFiles.allSatisfy({ !file.contains($0) }) else { continue }
+//     let fileLines = read(file: file, danger: danger)
+
+//     for (index, line) in fileLines.enumerated() {
+//       if line.contains("DispatchQueue.main.sync") {
+//         let link = "https://stackoverflow.com/questions/44324595/difference-between-dispatchqueue-main-async-and-dispatchqueue-main-sync"
+//         warn(message: "Please async on the main queue. [More information](\(link))",
+//              file: file,
+//              line: index + 1)
+//       }
+//     }
+//   }
+// }
+
+// // MARK: - 10 - Dispatch Async
+
+// func checkDispatchSyncIsNotCalledOnMain() {
+//   let excludedFiles = [
+//     "Dangerfile"
+//   ]
+//   for file in filter(files: filesChanged, with: [.swift]) {
+//     guard excludedFiles.allSatisfy({ !file.contains($0) }) else { continue }
+//     let fileLines = read(file: file, danger: danger)
+
+//     for (index, line) in fileLines.enumerated() {
+//       if line.contains("DispatchQueue.main.sync") {
+//         let link = "https://stackoverflow.com/questions/44324595/difference-between-dispatchqueue-main-async-and-dispatchqueue-main-sync"
+//         warn(message: "Please async on the main queue. [More information](\(link))",
+//              file: file,
+//              line: index + 1)
+//       }
+//     }
+//   }
+// }
+
+// // MARK: - 10 - Dispatch Async
+
+// func checkDispatchSyncIsNotCalledOnMain() {
+//   let excludedFiles = [
+//     "Dangerfile"
+//   ]
+//   for file in filter(files: filesChanged, with: [.swift]) {
+//     guard excludedFiles.allSatisfy({ !file.contains($0) }) else { continue }
+//     let fileLines = read(file: file, danger: danger)
+
+//     for (index, line) in fileLines.enumerated() {
+//       if line.contains("DispatchQueue.main.sync") {
+//         let link = "https://stackoverflow.com/questions/44324595/difference-between-dispatchqueue-main-async-and-dispatchqueue-main-sync"
+//         warn(message: "Please async on the main queue. [More information](\(link))",
+//              file: file,
+//              line: index + 1)
+//       }
+//     }
+//   }
+// }
+
+// // MARK: - 10 - Dispatch Async
+
+// func checkDispatchSyncIsNotCalledOnMain() {
+//   let excludedFiles = [
+//     "Dangerfile"
+//   ]
+//   for file in filter(files: filesChanged, with: [.swift]) {
+//     guard excludedFiles.allSatisfy({ !file.contains($0) }) else { continue }
+//     let fileLines = read(file: file, danger: danger)
+
+//     for (index, line) in fileLines.enumerated() {
+//       if line.contains("DispatchQueue.main.sync") {
+//         let link = "https://stackoverflow.com/questions/44324595/difference-between-dispatchqueue-main-async-and-dispatchqueue-main-sync"
+//         warn(message: "Please async on the main queue. [More information](\(link))",
+//              file: file,
+//              line: index + 1)
+//       }
+//     }
+//   }
+// }v
+
+// // MARK: - 10 - Dispatch Async
+
+// func checkDispatchSyncIsNotCalledOnMain() {
+//   let excludedFiles = [
+//     "Dangerfile"
+//   ]
+//   for file in filter(files: filesChanged, with: [.swift]) {
+//     guard excludedFiles.allSatisfy({ !file.contains($0) }) else { continue }
+//     let fileLines = read(file: file, danger: danger)
+
+//     for (index, line) in fileLines.enumerated() {
+//       if line.contains("DispatchQueue.main.sync") {
+//         let link = "https://stackoverflow.com/questions/44324595/difference-between-dispatchqueue-main-async-and-dispatchqueue-main-sync"
+//         warn(message: "Please async on the main queue. [More information](\(link))",
+//              file: file,
+//              line: index + 1)
+//       }
+//     }
+//   }
+// }
+
+// // MARK: - 10 - Dispatch Async
+
+// func checkDispatchSyncIsNotCalledOnMain() {
+//   let excludedFiles = [
+//     "Dangerfile"
+//   ]
+//   for file in filter(files: filesChanged, with: [.swift]) {
+//     guard excludedFiles.allSatisfy({ !file.contains($0) }) else { continue }
+//     let fileLines = read(file: file, danger: danger)
+
+//     for (index, line) in fileLines.enumerated() {
+//       if line.contains("DispatchQueue.main.sync") {
+//         let link = "https://stackoverflow.com/questions/44324595/difference-between-dispatchqueue-main-async-and-dispatchqueue-main-sync"
+//         warn(message: "Please async on the main queue. [More information](\(link))",
+//              file: file,
+//              line: index + 1)
+//       }
+//     }
+//   }
+// }
+
+// // MARK: - 10 - Dispatch Async
+
+// func checkDispatchSyncIsNotCalledOnMain() {
+//   let excludedFiles = [
+//     "Dangerfile"
+//   ]
+//   for file in filter(files: filesChanged, with: [.swift]) {
+//     guard excludedFiles.allSatisfy({ !file.contains($0) }) else { continue }
+//     let fileLines = read(file: file, danger: danger)
+
+//     for (index, line) in fileLines.enumerated() {
+//       if line.contains("DispatchQueue.main.sync") {
+//         let link = "https://stackoverflow.com/questions/44324595/difference-between-dispatchqueue-main-async-and-dispatchqueue-main-sync"
+//         warn(message: "Please async on the main queue. [More information](\(link))",
+//              file: file,
+//              line: index + 1)
+//       }
+//     }
+//   }
+// }
+
+// // MARK: - 10 - Dispatch Async
+
+// func checkDispatchSyncIsNotCalledOnMain() {
+//   let excludedFiles = [
+//     "Dangerfile"
+//   ]
+//   for file in filter(files: filesChanged, with: [.swift]) {
+//     guard excludedFiles.allSatisfy({ !file.contains($0) }) else { continue }
+//     let fileLines = read(file: file, danger: danger)
+
+//     for (index, line) in fileLines.enumerated() {
+//       if line.contains("DispatchQueue.main.sync") {
+//         let link = "https://stackoverflow.com/questions/44324595/difference-between-dispatchqueue-main-async-and-dispatchqueue-main-sync"
+//         warn(message: "Please async on the main queue. [More information](\(link))",
+//              file: file,
+//              line: index + 1)
+//       }
+//     }
+//   }
+// }
+
+// // MARK: - 10 - Dispatch Async
+
+// func checkDispatchSyncIsNotCalledOnMain() {
+//   let excludedFiles = [
+//     "Dangerfile"
+//   ]
+//   for file in filter(files: filesChanged, with: [.swift]) {
+//     guard excludedFiles.allSatisfy({ !file.contains($0) }) else { continue }
+//     let fileLines = read(file: file, danger: danger)
+
+//     for (index, line) in fileLines.enumerated() {
+//       if line.contains("DispatchQueue.main.sync") {
+//         let link = "https://stackoverflow.com/questions/44324595/difference-between-dispatchqueue-main-async-and-dispatchqueue-main-sync"
+//         warn(message: "Please async on the main queue. [More information](\(link))",
+//              file: file,
+//              line: index + 1)
+//       }
+//     }
+//   }
+// }
+
+// // MARK: - 10 - Dispatch Async
+
+// func checkDispatchSyncIsNotCalledOnMain() {
+//   let excludedFiles = [
+//     "Dangerfile"
+//   ]
+//   for file in filter(files: filesChanged, with: [.swift]) {
+//     guard excludedFiles.allSatisfy({ !file.contains($0) }) else { continue }
+//     let fileLines = read(file: file, danger: danger)
+
+//     for (index, line) in fileLines.enumerated() {
+//       if line.contains("DispatchQueue.main.sync") {
+//         let link = "https://stackoverflow.com/questions/44324595/difference-between-dispatchqueue-main-async-and-dispatchqueue-main-sync"
+//         warn(message: "Please async on the main queue. [More information](\(link))",
+//              file: file,
+//              line: index + 1)
+//       }
+//     }
+//   }
+// }
+
+// // MARK: - 10 - Dispatch Async
+
+// func checkDispatchSyncIsNotCalledOnMain() {
+//   let excludedFiles = [
+//     "Dangerfile"
+//   ]
+//   for file in filter(files: filesChanged, with: [.swift]) {
+//     guard excludedFiles.allSatisfy({ !file.contains($0) }) else { continue }
+//     let fileLines = read(file: file, danger: danger)
+
+//     for (index, line) in fileLines.enumerated() {
+//       if line.contains("DispatchQueue.main.sync") {
+//         let link = "https://stackoverflow.com/questions/44324595/difference-between-dispatchqueue-main-async-and-dispatchqueue-main-sync"
+//         warn(message: "Please async on the main queue. [More information](\(link))",
+//              file: file,
+//              line: index + 1)
+//       }
+//     }
+//   }
+// }
+
+// // MARK: - 10 - Dispatch Async
+
+// func checkDispatchSyncIsNotCalledOnMain() {
+//   let excludedFiles = [
+//     "Dangerfile"
+//   ]
+//   for file in filter(files: filesChanged, with: [.swift]) {
+//     guard excludedFiles.allSatisfy({ !file.contains($0) }) else { continue }
+//     let fileLines = read(file: file, danger: danger)
+
+//     for (index, line) in fileLines.enumerated() {
+//       if line.contains("DispatchQueue.main.sync") {
+//         let link = "https://stackoverflow.com/questions/44324595/difference-between-dispatchqueue-main-async-and-dispatchqueue-main-sync"
+//         warn(message: "Please async on the main queue. [More information](\(link))",
+//              file: file,
+//              line: index + 1)
+//       }
+//     }
+//   }
+// }
+
+// // MARK: - 10 - Dispatch Async
+
+// func checkDispatchSyncIsNotCalledOnMain() {
+//   let excludedFiles = [
+//     "Dangerfile"
+//   ]
+//   for file in filter(files: filesChanged, with: [.swift]) {
+//     guard excludedFiles.allSatisfy({ !file.contains($0) }) else { continue }
+//     let fileLines = read(file: file, danger: danger)
+
+//     for (index, line) in fileLines.enumerated() {
+//       if line.contains("DispatchQueue.main.sync") {
+//         let link = "https://stackoverflow.com/questions/44324595/difference-between-dispatchqueue-main-async-and-dispatchqueue-main-sync"
+//         warn(message: "Please async on the main queue. [More information](\(link))",
+//              file: file,
+//              line: index + 1)
+//       }
+//     }
+//   }
+// }
+
+// // MARK: - 10 - Dispatch Async
+
+// func checkDispatchSyncIsNotCalledOnMain() {
+//   let excludedFiles = [
+//     "Dangerfile"
+//   ]
+//   for file in filter(files: filesChanged, with: [.swift]) {
+//     guard excludedFiles.allSatisfy({ !file.contains($0) }) else { continue }
+//     let fileLines = read(file: file, danger: danger)
+
+//     for (index, line) in fileLines.enumerated() {
+//       if line.contains("DispatchQueue.main.sync") {
+//         let link = "https://stackoverflow.com/questions/44324595/difference-between-dispatchqueue-main-async-and-dispatchqueue-main-sync"
+//         warn(message: "Please async on the main queue. [More information](\(link))",
+//              file: file,
+//              line: index + 1)
+//       }
+//     }
+//   }
+// }
+
+// // MARK: - 10 - Dispatch Async
+
+// func checkDispatchSyncIsNotCalledOnMain() {
+//   let excludedFiles = [
+//     "Dangerfile"
+//   ]
+//   for file in filter(files: filesChanged, with: [.swift]) {
+//     guard excludedFiles.allSatisfy({ !file.contains($0) }) else { continue }
+//     let fileLines = read(file: file, danger: danger)
+
+//     for (index, line) in fileLines.enumerated() {
+//       if line.contains("DispatchQueue.main.sync") {
+//         let link = "https://stackoverflow.com/questions/44324595/difference-between-dispatchqueue-main-async-and-dispatchqueue-main-sync"
+//         warn(message: "Please async on the main queue. [More information](\(link))",
+//              file: file,
+//              line: index + 1)
+//       }
+//     }
+//   }
+// }
+
+// // MARK: - 10 - Dispatch Async
+
+// func checkDispatchSyncIsNotCalledOnMain() {
+//   let excludedFiles = [
+//     "Dangerfile"
+//   ]
+//   for file in filter(files: filesChanged, with: [.swift]) {
+//     guard excludedFiles.allSatisfy({ !file.contains($0) }) else { continue }
+//     let fileLines = read(file: file, danger: danger)
+
+//     for (index, line) in fileLines.enumerated() {
+//       if line.contains("DispatchQueue.main.sync") {
+//         let link = "https://stackoverflow.com/questions/44324595/difference-between-dispatchqueue-main-async-and-dispatchqueue-main-sync"
+//         warn(message: "Please async on the main queue. [More information](\(link))",
+//              file: file,
+//              line: index + 1)
+//       }
+//     }
+//   }
+// }
+
+// // MARK: - 10 - Dispatch Async
+
+// func checkDispatchSyncIsNotCalledOnMain() {
+//   let excludedFiles = [
+//     "Dangerfile"
+//   ]
+//   for file in filter(files: filesChanged, with: [.swift]) {
+//     guard excludedFiles.allSatisfy({ !file.contains($0) }) else { continue }
+//     let fileLines = read(file: file, danger: danger)
+
+//     for (index, line) in fileLines.enumerated() {
+//       if line.contains("DispatchQueue.main.sync") {
+//         let link = "https://stackoverflow.com/questions/44324595/difference-between-dispatchqueue-main-async-and-dispatchqueue-main-sync"
+//         warn(message: "Please async on the main queue. [More information](\(link))",
+//              file: file,
+//              line: index + 1)
+//       }
+//     }
+//   }
+// }
+
+// // MARK: - 10 - Dispatch Async
+
+// func checkDispatchSyncIsNotCalledOnMain() {
+//   let excludedFiles = [
+//     "Dangerfile"
+//   ]
+//   for file in filter(files: filesChanged, with: [.swift]) {
+//     guard excludedFiles.allSatisfy({ !file.contains($0) }) else { continue }
+//     let fileLines = read(file: file, danger: danger)
+
+//     for (index, line) in fileLines.enumerated() {
+//       if line.contains("DispatchQueue.main.sync") {
+//         let link = "https://stackoverflow.com/questions/44324595/difference-between-dispatchqueue-main-async-and-dispatchqueue-main-sync"
+//         warn(message: "Please async on the main queue. [More information](\(link))",
+//              file: file,
+//              line: index + 1)
+//       }
+//     }
+//   }
+// }
+
+// // MARK: - 10 - Dispatch Async
+
+// func checkDispatchSyncIsNotCalledOnMain() {
+//   let excludedFiles = [
+//     "Dangerfile"
+//   ]
+//   for file in filter(files: filesChanged, with: [.swift]) {
+//     guard excludedFiles.allSatisfy({ !file.contains($0) }) else { continue }
+//     let fileLines = read(file: file, danger: danger)
+
+//     for (index, line) in fileLines.enumerated() {
+//       if line.contains("DispatchQueue.main.sync") {
+//         let link = "https://stackoverflow.com/questions/44324595/difference-between-dispatchqueue-main-async-and-dispatchqueue-main-sync"
+//         warn(message: "Please async on the main queue. [More information](\(link))",
+//              file: file,
+//              line: index + 1)
+//       }
+//     }
+//   }
+// }
+
+// // MARK: - 10 - Dispatch Async
+
+// func checkDispatchSyncIsNotCalledOnMain() {
+//   let excludedFiles = [
+//     "Dangerfile"
+//   ]
+//   for file in filter(files: filesChanged, with: [.swift]) {
+//     guard excludedFiles.allSatisfy({ !file.contains($0) }) else { continue }
+//     let fileLines = read(file: file, danger: danger)
+
+//     for (index, line) in fileLines.enumerated() {
+//       if line.contains("DispatchQueue.main.sync") {
+//         let link = "https://stackoverflow.com/questions/44324595/difference-between-dispatchqueue-main-async-and-dispatchqueue-main-sync"
+//         warn(message: "Please async on the main queue. [More information](\(link))",
+//              file: file,
+//              line: index + 1)
+//       }
+//     }
+//   }
+// }
+
+// // MARK: - 10 - Dispatch Async
+
+// func checkDispatchSyncIsNotCalledOnMain() {
+//   let excludedFiles = [
+//     "Dangerfile"
+//   ]
+//   for file in filter(files: filesChanged, with: [.swift]) {
+//     guard excludedFiles.allSatisfy({ !file.contains($0) }) else { continue }
+//     let fileLines = read(file: file, danger: danger)
+
+//     for (index, line) in fileLines.enumerated() {
+//       if line.contains("DispatchQueue.main.sync") {
+//         let link = "https://stackoverflow.com/questions/44324595/difference-between-dispatchqueue-main-async-and-dispatchqueue-main-sync"
+//         warn(message: "Please async on the main queue. [More information](\(link))",
+//              file: file,
+//              line: index + 1)
+//       }
+//     }
+//   }
+// }
+
+// // MARK: - 10 - Dispatch Async
+
+// func checkDispatchSyncIsNotCalledOnMain() {
+//   let excludedFiles = [
+//     "Dangerfile"
+//   ]
+//   for file in filter(files: filesChanged, with: [.swift]) {
+//     guard excludedFiles.allSatisfy({ !file.contains($0) }) else { continue }
+//     let fileLines = read(file: file, danger: danger)
+
+//     for (index, line) in fileLines.enumerated() {
+//       if line.contains("DispatchQueue.main.sync") {
+//         let link = "https://stackoverflow.com/questions/44324595/difference-between-dispatchqueue-main-async-and-dispatchqueue-main-sync"
+//         warn(message: "Please async on the main queue. [More information](\(link))",
+//              file: file,
+//              line: index + 1)
+//       }
+//     }
+//   }
+// }
+
+// // MARK: - 10 - Dispatch Async
+
+// func checkDispatchSyncIsNotCalledOnMain() {
+//   let excludedFiles = [
+//     "Dangerfile"
+//   ]
+//   for file in filter(files: filesChanged, with: [.swift]) {
+//     guard excludedFiles.allSatisfy({ !file.contains($0) }) else { continue }
+//     let fileLines = read(file: file, danger: danger)
+
+//     for (index, line) in fileLines.enumerated() {
+//       if line.contains("DispatchQueue.main.sync") {
+//         let link = "https://stackoverflow.com/questions/44324595/difference-between-dispatchqueue-main-async-and-dispatchqueue-main-sync"
+//         warn(message: "Please async on the main queue. [More information](\(link))",
+//              file: file,
+//              line: index + 1)
+//       }
+//     }
+//   }
+// }
+
+// // MARK: - 10 - Dispatch Async
+
+// func checkDispatchSyncIsNotCalledOnMain() {
+//   let excludedFiles = [
+//     "Dangerfile"
+//   ]
+//   for file in filter(files: filesChanged, with: [.swift]) {
+//     guard excludedFiles.allSatisfy({ !file.contains($0) }) else { continue }
+//     let fileLines = read(file: file, danger: danger)
+
+//     for (index, line) in fileLines.enumerated() {
+//       if line.contains("DispatchQueue.main.sync") {
+//         let link = "https://stackoverflow.com/questions/44324595/difference-between-dispatchqueue-main-async-and-dispatchqueue-main-sync"
+//         warn(message: "Please async on the main queue. [More information](\(link))",
+//              file: file,
+//              line: index + 1)
+//       }
+//     }
+//   }
+// }
+
+// // MARK: - 10 - Dispatch Async
+
+// func checkDispatchSyncIsNotCalledOnMain() {
+//   let excludedFiles = [
+//     "Dangerfile"
+//   ]
+//   for file in filter(files: filesChanged, with: [.swift]) {
+//     guard excludedFiles.allSatisfy({ !file.contains($0) }) else { continue }
+//     let fileLines = read(file: file, danger: danger)
+
+//     for (index, line) in fileLines.enumerated() {
+//       if line.contains("DispatchQueue.main.sync") {
+//         let link = "https://stackoverflow.com/questions/44324595/difference-between-dispatchqueue-main-async-and-dispatchqueue-main-sync"
+//         warn(message: "Please async on the main queue. [More information](\(link))",
+//              file: file,
+//              line: index + 1)
+//       }
+//     }
+//   }
+// }
 
 // // MARK: - 10 - Dispatch Async
 

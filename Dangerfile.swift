@@ -1,4 +1,4 @@
-import Danger 
+import Danger
 let danger = Danger()
 
 //let editedFiles = danger.git.modifiedFiles + danger.git.createdFiles
@@ -17,18 +17,17 @@ if !pullRequestBody.contains("📲 What") ||
      - 🤔 Why
      - 🛠 How
      - 👀 See
-    Please use the pull request:template:
-    https://github.com/kickstarter/ios-oss/blob/master/.github/PULL_REQUEST_TEMPLATE.md
+    Please use the [pull request template](https://github.com/kickstarter/ios-oss/blob/master/.github/PULL_REQUEST_TEMPLATE.md)
     """)
 }
 
 // MARK: - 2 - Large Pull Request
 
-var largePRLineCount = 500;
+var largePRLineCount = 500
 let additions: Int = danger.github.pullRequest.additions ?? 0
 let deletions: Int = danger.github.pullRequest.deletions ?? 0
 
-if ((additions + deletions) > largePRLineCount) {
+if (additions + deletions) > largePRLineCount {
   warn("""
     Number of pull request changes is larger than 500! Consider breaking out future changes into smaller pull requests.
     """)
@@ -40,13 +39,13 @@ if ((additions + deletions) > largePRLineCount) {
 
 // MARK: - 4 - Celebrate Milestones
 
-let pullRequestMilestones = [3, 10, 100]
+let pullRequestMilestones = [4, 10, 100]
 let currentPRNumber = danger.github.pullRequest.number
 if pullRequestMilestones.contains(currentPRNumber) {
     let githubHandle = danger.github.pullRequest.user.login
-    message("Congratulations \(githubHandle)! You've made the \(currentPRNumber)th Pull Request!")
+    message("Congratulations *@\(githubHandle)*! You've made the \(currentPRNumber)th Pull Request!")
 }
-    
+
  // MARK: - 10 - Dispatch Async
 
  func checkDispatchSyncIsNotCalledOnMain() {
@@ -119,7 +118,8 @@ func filter(files: [File], with fileTypes: [FileType]) -> [File] {
 //   }
 // }
 
-// /// Checks if enabled animations are able to be accessible. iOS allows animations to be disabled through accessibility options.
+// /// Checks if enabled animations are able to be accessible. iOS allows animations to be disabled through
+// accessibility options.
 // func checkAnimationsAreAccessible() {
 //   let excludedFiles = [
 //     "Dangerfile"

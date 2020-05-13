@@ -9,7 +9,7 @@
 import SwiftUI
 
 struct ContentView: View {
-    
+
     /// This is a comment.
     var body: some View {
         Text("Hello, World!")
@@ -22,8 +22,6 @@ struct ContentView_Previews: PreviewProvider {
     }
 }
 
-
 final class ViewController {
-    
-    
+
 }

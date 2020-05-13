@@ -3,24 +3,24 @@ let danger = Danger()
 
 //let editedFiles = danger.git.modifiedFiles + danger.git.createdFiles
 //message("These files have changed: \(editedFiles.joined(separator: ", "))")
-//
-//// MARK: - 1 - Pull Request Description
-//
-//let pullRequestBody = danger.github.pullRequest.body ?? ""
-//if !pullRequestBody.contains("📲 What") ||
-//    !pullRequestBody.contains("👀 See") ||
-//    !pullRequestBody.contains("🤔 Why") ||
-//    !pullRequestBody.contains("🛠 How") {
-//    warn("""
-//    Pull request description is missing required information:
-//     - 📲 What
-//     - 🤔 Why
-//     - 🛠 How
-//     - 👀 See
-//    Please use the pull request:template:
-//    https://github.com/kickstarter/ios-oss/blob/master/.github/PULL_REQUEST_TEMPLATE.md
-//    """)
-//}
+
+// MARK: - 1 - Pull Request Description
+
+let pullRequestBody = danger.github.pullRequest.body ?? ""
+if !pullRequestBody.contains("📲 What") ||
+    !pullRequestBody.contains("👀 See") ||
+    !pullRequestBody.contains("🤔 Why") ||
+    !pullRequestBody.contains("🛠 How") {
+    warn("""
+    Pull request description is missing required information:
+     - 📲 What
+     - 🤔 Why
+     - 🛠 How
+     - 👀 See
+    Please use the pull request:template:
+    https://github.com/kickstarter/ios-oss/blob/master/.github/PULL_REQUEST_TEMPLATE.md
+    """)
+}
 
 // MARK: - 2 - Large Pull Request
 

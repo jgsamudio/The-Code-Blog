@@ -36,7 +36,7 @@ if ((additions + deletions) > largePRLineCount) {
 
 // MARK: - 3 - SwiftLint
 
-SwiftLint.lint(inline: true, strict: true, lintAllFiles: true)
+//SwiftLint.lint(inline: true, strict: true, lintAllFiles: true)
 
 // MARK: - 4 - Celebrate Milestones
 

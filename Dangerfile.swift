@@ -43,52 +43,47 @@ let pullRequestMilestones = [4, 10, 100]
 let currentPRNumber = danger.github.pullRequest.number
 if pullRequestMilestones.contains(currentPRNumber) {
     let githubHandle = danger.github.pullRequest.user.login
-    message("Congratulations *@\(githubHandle)*! You've made the \(currentPRNumber)th Pull Request!")
+    message("Congratulations *@\(githubHandle)*! You've made the \(currentPRNumber)th Pull Request! :tada:")
 }
 
- // MARK: - 10 - Dispatch Async
 
- func checkDispatchSyncIsNotCalledOnMain() {
-   let excludedFiles = [
-     "Dangerfile"
-   ]
-   for file in filter(files: danger.git.modifiedFiles + danger.git.createdFiles, with: [.swift]) {
-     guard excludedFiles.allSatisfy({ !file.contains($0) }) else { continue }
-     let fileLines = read(file: file, danger: danger)
+// MARK: Custom Rules
 
-     for (index, line) in fileLines.enumerated() {
-       if line.contains("DispatchQueue.main.sync") {
-         let link = "https://stackoverflow.com/questions/44324595/difference-between-dispatchqueue-main-async-and-dispatchqueue-main-sync"
-         warn(message: "Please async on the main queue. [More information](\(link))",
-              file: file,
-              line: index + 1)
-       }
-     }
-   }
- }
-
-// MARK: - Helper Functions
-
-/// Reads the file and returns an array of file lines.
-/// - Parameter file: Danger swift file.
-/// - Parameter danger: Danger dsl used to read the file.
-/// - Parameter filterFileTypes:
-func read(file: File, danger: DangerDSL, filterFileTypes: [FileType]? = nil) -> [String] {
-  danger.utils.readFile(file).components(separatedBy: "\n")
+let excludedFiles = ["Dangerfile"]
+let filesWithAdditions = (danger.git.modifiedFiles + danger.git.createdFiles).filter {
+	return $0.fileType == .swift && !excludedFiles.contains($0)
 }
 
-/// Filters the files provided with the given file types.
-/// - Parameter files: Files to search through.
-/// - Parameter fileTypes: File types to filter by.
-func filter(files: [File], with fileTypes: [FileType]) -> [File] {
-  guard !fileTypes.isEmpty else { return files }
-  return files.filter {
-    if let fileType = $0.fileType {
-      return fileTypes.contains(fileType)
-    }
-    return false
+// MARK: - 5 - Dispatch Async
+
+for file in filesWithAdditions {
+  let fileLines = danger.utils.readFile(file).components(separatedBy: "\n")
+	for (index, line) in fileLines.enumerated() {
+		if line.contains("DispatchQueue.main.sync") {
+			 let link = "https://stackoverflow.com/questions/44324595/difference-between-dispatchqueue-main-async-and-dispatchqueue-main-sync"
+			 warn(message: "Please async on the main queue. [More information](\(link))",
+						file: file,
+						line: index + 1)
+		}
   }
 }
+
+// MARK: - Helper Functions
+   
+//func filesWithAdditions(fileTypes: [FileType] = [.swift], excludedFiles: [File] = []) -> [String] {
+//	return (danger.git.modifiedFiles + danger.git.createdFiles).filter {
+//		guard let fileType = $0.fileType, !excludedFiles.contains($0) else { return false }
+//		return fileTypes.contains(fileType)
+//	}
+//}
+//
+///// Reads the file and returns an array of file lines.
+///// - Parameter file: Danger swift file.
+///// - Parameter danger: Danger dsl used to read the file.
+///// - Parameter filterFileTypes:
+//func read(file: File, danger: DangerDSL, filterFileTypes: [FileType]? = nil) -> [String] {
+//	danger.utils.readFile(file).components(separatedBy: "\n")
+//}
 
 // // MARK: - 4 - Asset Template and Vector
 

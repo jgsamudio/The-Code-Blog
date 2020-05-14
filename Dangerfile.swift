@@ -1,39 +1,89 @@
-import Danger 
+import Danger
 let danger = Danger()
 
-let editedFiles = danger.git.modifiedFiles + danger.git.createdFiles
-message("These files have changed: \(editedFiles.joined(separator: ", "))")
+//let editedFiles = danger.git.modifiedFiles + danger.git.createdFiles
+//message("These files have changed: \(editedFiles.joined(separator: ", "))")
 
-// import Danger
-// let danger = Danger()
+// MARK: - 1 - Pull Request Description
 
-// var bigPRThreshold = 600;
-// if (danger.github.pullRequest.additions + danger.github.pullRequest.deletions > bigPRThreshold) {
-//   warn('> Pull Request size seems relatively large. If this Pull Request contains multiple changes, please split each into separate PR will helps faster, easier review.');
-// }
+let pullRequestBody = danger.github.pullRequest.body ?? ""
+if !pullRequestBody.contains("📲 What") ||
+    !pullRequestBody.contains("👀 See") ||
+    !pullRequestBody.contains("🤔 Why") ||
+    !pullRequestBody.contains("🛠 How") {
+    warn("""
+    Pull request description is missing required information:
+     - 📲 What
+     - 🤔 Why
+     - 🛠 How
+     - 👀 See
+    Please use the [pull request template](https://github.com/kickstarter/ios-oss/blob/master/.github/PULL_REQUEST_TEMPLATE.md)
+    """)
+}
+
+// MARK: - 2 - Large Pull Request
+
+var largePRLineCount = 500
+let additions: Int = danger.github.pullRequest.additions ?? 0
+let deletions: Int = danger.github.pullRequest.deletions ?? 0
+
+if (additions + deletions) > largePRLineCount {
+  warn("""
+    Number of pull request changes is larger than 500! Consider breaking out future changes into smaller pull requests.
+    """)
+}
+
+// MARK: - 3 - SwiftLint
+
+//SwiftLint.lint(inline: true, strict: true, lintAllFiles: true)
+
+// MARK: - 4 - Celebrate Milestones
+
+let pullRequestMilestones = [4, 10, 100]
+let currentPRNumber = danger.github.pullRequest.number
+if pullRequestMilestones.contains(currentPRNumber) {
+    let githubHandle = danger.github.pullRequest.user.login
+    message("Congratulations *@\(githubHandle)*! You've made the \(currentPRNumber)th Pull Request! :tada:")
+}
 
 
-// // MARK: - 10 - Dispatch Async
+// MARK: Custom Rules
 
-// func checkDispatchSyncIsNotCalledOnMain() {
-//   let excludedFiles = [
-//     "Dangerfile"
-//   ]
-//   for file in filter(files: filesChanged, with: [.swift]) {
-//     guard excludedFiles.allSatisfy({ !file.contains($0) }) else { continue }
-//     let fileLines = read(file: file, danger: danger)
+let excludedFiles = ["Dangerfile"]
+let filesWithAdditions = (danger.git.modifiedFiles + danger.git.createdFiles).filter {
+	return $0.fileType == .swift && !excludedFiles.contains($0)
+}
 
-//     for (index, line) in fileLines.enumerated() {
-//       if line.contains("DispatchQueue.main.sync") {
-//         let link = "https://stackoverflow.com/questions/44324595/difference-between-dispatchqueue-main-async-and-dispatchqueue-main-sync"
-//         warn(message: "Please async on the main queue. [More information](\(link))",
-//              file: file,
-//              line: index + 1)
-//       }
-//     }
-//   }
-// }
+// MARK: - 5 - Dispatch Async
 
+for file in filesWithAdditions {
+  let fileLines = danger.utils.readFile(file).components(separatedBy: "\n")
+	for (index, line) in fileLines.enumerated() {
+		if line.contains("DispatchQueue.main.sync") {
+			 let link = "https://stackoverflow.com/questions/44324595/difference-between-dispatchqueue-main-async-and-dispatchqueue-main-sync"
+			 warn(message: "Please async on the main queue. [More information](\(link))",
+						file: file,
+						line: index + 1)
+		}
+  }
+}
+
+// MARK: - Helper Functions
+   
+//func filesWithAdditions(fileTypes: [FileType] = [.swift], excludedFiles: [File] = []) -> [String] {
+//	return (danger.git.modifiedFiles + danger.git.createdFiles).filter {
+//		guard let fileType = $0.fileType, !excludedFiles.contains($0) else { return false }
+//		return fileTypes.contains(fileType)
+//	}
+//}
+//
+///// Reads the file and returns an array of file lines.
+///// - Parameter file: Danger swift file.
+///// - Parameter danger: Danger dsl used to read the file.
+///// - Parameter filterFileTypes:
+//func read(file: File, danger: DangerDSL, filterFileTypes: [FileType]? = nil) -> [String] {
+//	danger.utils.readFile(file).components(separatedBy: "\n")
+//}
 
 // // MARK: - 4 - Asset Template and Vector
 
@@ -63,7 +113,8 @@ message("These files have changed: \(editedFiles.joined(separator: ", "))")
 //   }
 // }
 
-// /// Checks if enabled animations are able to be accessible. iOS allows animations to be disabled through accessibility options.
+// /// Checks if enabled animations are able to be accessible. iOS allows animations to be disabled through
+// accessibility options.
 // func checkAnimationsAreAccessible() {
 //   let excludedFiles = [
 //     "Dangerfile"
@@ -77,4 +128,8 @@ message("These files have changed: \(editedFiles.joined(separator: ", "))")
 //       }
 //     }
 //   }
+// }
+
+// if danger.git.createdFiles.count + danger.git.modifiedFiles.count - danger.git.deletedFiles.count > 300 {
+//     warn("Big PR, try to keep changes smaller if you can")
 // }
